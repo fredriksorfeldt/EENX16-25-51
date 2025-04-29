@@ -2,12 +2,10 @@
 
 NOTE 2025-04-29:
 When creating a shape object a topoDS_Shape amd a trimesh Mesh should be passed, however trimesh uses meters and topoDS_Shape uses milimeters as unit. 
-This requires us to scale the trimesh object like:
-###########################################################
-# Topods
-root_shape = load_step_shape(file_path)
 
-# Trimesh
+# This requires us to scale the trimesh object like:
+
+root_shape = load_step_shape(file_path)
 loaded  = trimesh.load_mesh(file_path)
 
 if isinstance(loaded, trimesh.Scene):
@@ -25,4 +23,3 @@ S[:3, :3] *= scale_factor
 mesh.apply_transform(S)
 
 shape = Shape(root_shape, mesh, point_distance = 8)
-###########################################################
