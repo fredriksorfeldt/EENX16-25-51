@@ -13,8 +13,9 @@ from OCC.Core.TopAbs import TopAbs_FACE, TopAbs_IN
 from OCC.Core.BRepClass import BRepClass_FaceClassifier
 from OCC.Core.GProp import GProp_GProps
 from OCC.Core.BRepGProp import brepgprop
+from OCC.Core.gp import gp_Pnt, gp_Mat
 
-from typing import List, Any, Dict
+from typing import List, Any, Dict, Tuple
 from numpy.typing import NDArray
 import numpy as np
 
@@ -33,6 +34,11 @@ def load_step_shape(file_path: str) -> TopoDS_Shape:
     
     simple_reader.TransferRoot()
     return simple_reader.Shape()
+
+def compute_shape_properties(shape: TopoDS_Shape) -> Tuple[float, gp_Pnt, gp_Mat]:
+    props = GProp_GProps()
+    brepgprop.VolumeProperties(shape, props)
+    return props.Mass(), props.CentreOfMass(), props.MatrixOfInertia()
 
 def uv_position_to_global(points: List[NDArray[np.float64]], face: TopoDS_Face) -> List[NDArray[np.float64]]:
     surface = BRep_Tool.Surface(face)
