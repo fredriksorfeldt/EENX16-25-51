@@ -120,7 +120,7 @@ class Shape:
         self.samples = self.samples.filter_by_mask(mask)
 
     def generate_samples(self, point_distance: float) -> PointSet:
-        from trimesh_utils.topods_utils import generate_face_point_clouds, filter_points_outside_face, uv_position_to_global
+        from topods_utils import generate_face_point_clouds, filter_points_outside_face, uv_position_to_global
 
         samples = generate_face_point_clouds(self.shape, point_distance)
         sample_points, sample_normals = [], []
@@ -159,20 +159,20 @@ class Tools(ABC):
         pass
 
 class SpongeTool(Tools):
-    def __init__(self, width: float, height: float, max_torque: float, max_convex_curve: float, min_coverage: float):
+    def __init__(self, max_width, max_torque: float, max_convex_curve: float, min_coverage: float):
         super().__init__("SpongeTool")
-        self.width = width
-        self.height = height
-        self.max_width = math.sqrt(width*width + height*height)
+        self.max_width = max_width
         self.max_torque = max_torque
         self.max_convex_curve = max_convex_curve
         self.min_coverage = min_coverage
 
 class SuctionTool(Tools):
-    def __init__(self, max_width: float, max_height_diff: float):
+    def __init__(self, max_width: float, max_height_diff: float, max_force: float | bool, max_torque = float | bool):
         super().__init__("SuctionTool")
         self.max_width = max_width
         self.max_height_diff = max_height_diff
+        self.max_force = max_force
+        self.max_torque = max_torque
     
     def filter_points(self, shape: Shape) -> PointSet:
         shape.create_z_maps(self.max_width * 2, z_threshold=400, sampling_rate=20)

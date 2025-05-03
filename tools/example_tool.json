@@ -1,0 +1,27 @@
+{
+    "name": "Name of end effector (str)",
+    "type": "Tool type ('suction', 'sponge', 'gripper')",
+    "source": "Link to specification page (str)",
+    "specification": {
+        "end_effector": {
+            "type": "Face type ('circular', 'rectangular')",
+            "dimensions": {
+                "diameter": "For circular faces  (mm)",
+                "x": "For rectangular suctions (mm)",
+                "y": "For rectangular suctions and grippers (mm)",
+                "z": "For grippers (mm)"
+            }
+        },
+        "max_load": {
+            "max_payload": "Maximum acceptable payload, false if unlisted (kg)",
+            "max_force": "Maximum acceptable force, false if unlisted (N)",
+            "max_torque": "Maximum acceptable torque, false if unlisted (Nm)"
+        },
+        "max_distances": {
+            "min_reach": "Minimum reachable depth from surface, typically 0 (mm)",
+            "max_reach": "Maximum reachable depth from surface (mm)",
+            "min_stroke": "Minimum stroke (grippers) (mm)",
+            "max_stroke": "Maximum stroke (grippers) (mm)"
+        }
+    }
+}

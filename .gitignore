@@ -1,0 +1,16 @@
+# Ignore the "cads" directory
+cads/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore STEP CAD files, ensures no protected CAD files are uploaded. 
+*.stp
+*.step
+
+# Ignore generated JSON files from points
+points.json
+
+# Ignore performance files
+*.prof

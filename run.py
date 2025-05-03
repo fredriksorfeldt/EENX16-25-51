@@ -4,8 +4,8 @@ import json
 import argparse
 from typing import List, Dict
 
-from trimesh_utils.trimesh_types import *
-from trimesh_utils.topods_utils import load_step_shape, compute_shape_properties
+from trimesh_types import *
+from topods_utils import load_step_shape, compute_shape_properties
 
 def export_JSON(point_sets: Dict, topods_shape: TopoDS_Shape, filename: str = "points.json"):
     properties = compute_shape_properties(topods_shape)
@@ -51,7 +51,7 @@ def main(file_path: str):
     shape = Shape(root_shape, mesh, point_distance = 8)
 
     # Creating Tools
-    suction = SuctionTool(10, 1)
+    suction = SuctionTool(10, 1, False, False)
 
     # Applying the tool-filters on the shape points
     suction_point_set = suction.filter_points(shape)

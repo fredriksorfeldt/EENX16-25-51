@@ -1,0 +1,25 @@
+{
+    "name": "Robotiq 2F-140",
+    "type": "gripper",
+    "source": "https://blog.robotiq.com/hubfs/support-files/2F-85_2F-140_UR_PDF_20240402.pdf",
+    "specification": {
+        "end_effector": {
+            "type": "rectangular",
+            "dimensions": {
+                "y": 27,
+                "z": 65.5
+            }
+        },
+        "max_load": {
+            "max_payload": 2.5,
+            "max_force": 125,
+            "max_torque": false
+        },
+        "max_distances": {
+            "min_reach": 0,
+            "max_reach": 142.8,
+            "min_stroke": 0,
+            "max_stroke": 140
+        }
+    }
+}
