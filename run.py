@@ -7,6 +7,7 @@ import numpy as np
 from utils.types import *
 from utils.topods_utils import load_step_shape
 from utils.json_utils import import_tools, export_JSON
+from utils.display_utils import display_shape
 
 def main(file_path: str, tool_folder_path: str):
     # Load as opencascade object
@@ -43,8 +44,10 @@ def main(file_path: str, tool_folder_path: str):
 
     # Applying the tool-filters on the shape points
     export_dict = {}
+    shapes = []
     for i, tool in enumerate(tools):
         shape_copy = copy.deepcopy(shape)
+        shapes.append(shape_copy)
         point_set = tool.filter_points(shape_copy)
         export_dict[f"tool_{i}"] = {"specifications": tool.get_dict(), "points": point_set.get_dict()}
 
