@@ -1,30 +1,14 @@
 import sys
 import trimesh
-import json
 import argparse
-from typing import List, Dict
+import copy
+import numpy as np
 
-from trimesh_types import *
-from topods_utils import load_step_shape, compute_shape_properties
+from utils.types import *
+from utils.topods_utils import load_step_shape
+from utils.json_utils import import_tools, export_JSON
 
-def export_JSON(point_sets: Dict, topods_shape: TopoDS_Shape, filename: str = "points.json"):
-    properties = compute_shape_properties(topods_shape)
-    export_dict = {
-        "meta": {
-            "mass": properties[0], 
-            "centre of mass": (properties[1].X(), properties[1].Y(), properties[1].Z()),
-            "descriptions": {
-                "position": "Global coordinate using step file coordinate space.",
-                "normal": "Pointing towards the approach direction.",
-            }
-        },
-        "point sets": point_sets
-    }
-
-    with open(filename, "w") as file:
-        json.dump(export_dict, file, indent=4)
-
-def main(file_path: str):
+def main(file_path: str, tool_folder_path: str):
     # Load as opencascade object
     root_shape = load_step_shape(file_path)
 
@@ -50,31 +34,29 @@ def main(file_path: str):
     # Creating Shape
     shape = Shape(root_shape, mesh, point_distance = 8)
 
-    # Creating Tools
-    suction = SuctionTool(10, 1, False, False)
+    # Load tools (Suction and sponge)
+    tools = import_tools(tool_folder_path)
+
+    if not tools:
+        print("No valid tools found in the specified folder.")
+        sys.exit(1)
 
     # Applying the tool-filters on the shape points
-    suction_point_set = suction.filter_points(shape)
-
-    # Creating to export dict
     export_dict = {}
-    export_dict["suction[1]"] = suction_point_set.get_dict()
+    for i, tool in enumerate(tools):
+        shape_copy = copy.deepcopy(shape)
+        point_set = tool.filter_points(shape_copy)
+        export_dict[f"tool_{i}"] = {"specifications": tool.get_dict(), "points": point_set.get_dict()}
 
-    export_JSON(export_dict, root_shape)
-
-
+    export_JSON(export_dict, shape, directory="./exports")
 
 if __name__ == "__main__":
     # Set up parsing arguments
     parser = argparse.ArgumentParser(description="Run the CAD visualizer")
-    parser.add_argument("file_path", type=str, help="Path to the STEP (.stp) file to visualize")
+    parser.add_argument("file_path", type=str, help="Path to the STEP (.stp) file")
+    parser.add_argument("tool_folder_path", type=str, help="Path to the folder containing JSON tool data")
 
     # Parse arguments
     args = parser.parse_args()
 
-    # Ensure a file path is provided
-    if not args.file_path:
-        print("Error: Please provide a STEP file path")
-        sys.exit(1)
-
-    main(args.file_path)
+    main(args.file_path, args.tool_folder_path)

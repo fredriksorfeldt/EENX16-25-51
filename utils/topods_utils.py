@@ -36,6 +36,7 @@ def load_step_shape(file_path: str) -> TopoDS_Shape:
     return simple_reader.Shape()
 
 def compute_shape_properties(shape: TopoDS_Shape) -> Tuple[float, gp_Pnt, gp_Mat]:
+    """ Returns: Volume, Center of mass point, Matrix of Inertia """
     props = GProp_GProps()
     brepgprop.VolumeProperties(shape, props)
     return props.Mass(), props.CentreOfMass(), props.MatrixOfInertia()
