@@ -4,21 +4,36 @@ import json
 import argparse
 from typing import List, Dict
 
-from trimesh_types import *
-from topods_utils import load_step_shape, compute_shape_properties
+from utils.types import *
+from utils.topods_utils import load_step_shape, compute_shape_properties
 
 def export_JSON(point_sets: Dict, topods_shape: TopoDS_Shape, filename: str = "points.json"):
-    properties = compute_shape_properties(topods_shape)
+    volume, cog, matrix_of_inertia = compute_shape_properties(topods_shape)
+    density = 7.85e-3 # Steel g/mm^3
+    mass = volume * density
+
+    inertia_matrix = [
+        [matrix_of_inertia.Value(1, 1), matrix_of_inertia.Value(1, 2), matrix_of_inertia.Value(1, 3)],
+        [matrix_of_inertia.Value(2, 1), matrix_of_inertia.Value(2, 2), matrix_of_inertia.Value(2, 3)],
+        [matrix_of_inertia.Value(3, 1), matrix_of_inertia.Value(3, 2), matrix_of_inertia.Value(3, 3)],
+    ]
+
     export_dict = {
         "meta": {
-            "mass": properties[0], 
-            "centre of mass": (properties[1].X(), properties[1].Y(), properties[1].Z()),
+            "mass": mass, 
+            "centre_of_mass": [cog.X(), cog.Y(), cog.Z()],
+            "matrix_of_inertia": inertia_matrix,
             "descriptions": {
+                "units": {
+                    "length": "mm",
+                    "mass": "g",
+                    "torque": "g*mm"
+                },
                 "position": "Global coordinate using step file coordinate space.",
-                "normal": "Pointing towards the approach direction.",
+                "normal": "Pointing towards the approach direction."
             }
         },
-        "point sets": point_sets
+        "point_sets": point_sets
     }
 
     with open(filename, "w") as file:
@@ -51,18 +66,16 @@ def main(file_path: str):
     shape = Shape(root_shape, mesh, point_distance = 8)
 
     # Creating Tools
-    suction = SuctionTool(10, 1, False, False)
+    suction = SuctionTool(10, 1, 5)
 
     # Applying the tool-filters on the shape points
     suction_point_set = suction.filter_points(shape)
 
     # Creating to export dict
     export_dict = {}
-    export_dict["suction[1]"] = suction_point_set.get_dict()
+    export_dict["suction_0"] = suction_point_set.get_dict()
 
     export_JSON(export_dict, root_shape)
-
-
 
 if __name__ == "__main__":
     # Set up parsing arguments

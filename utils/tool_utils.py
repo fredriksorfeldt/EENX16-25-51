@@ -1,6 +1,6 @@
 import json
 import numpy as np
-from trimesh_types import *
+from types import *
 
 def load_tool_from_json(json_path: str) -> (SuctionTool | SpongeTool | GripperTool): 
     '''
