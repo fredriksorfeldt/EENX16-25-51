@@ -66,7 +66,7 @@ def main(file_path: str):
     shape = Shape(root_shape, mesh, point_distance = 8)
 
     # Creating Tools
-    suction = SuctionTool(10, 1, 5)
+    suction = SuctionTool(max_width=10, max_height_diff=1, max_torque=5)
 
     # Applying the tool-filters on the shape points
     suction_point_set = suction.filter_points(shape)
@@ -76,6 +76,8 @@ def main(file_path: str):
     export_dict["suction_0"] = suction_point_set.get_dict()
 
     export_JSON(export_dict, root_shape)
+
+
 
 if __name__ == "__main__":
     # Set up parsing arguments
