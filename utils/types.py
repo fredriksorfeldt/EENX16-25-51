@@ -2,15 +2,14 @@
 from abc import ABC, abstractmethod
 from typing import List, Dict, Any
 import numpy as np
-import math
+import time
 import trimesh
 from numpy.typing import NDArray
 from sklearn.cluster import DBSCAN
 
 from OCC.Core.TopoDS import TopoDS_Shape
 
-## TODO: 
-#  - Implement JSON export.
+from .geometry_utils import trimesh_z_maps
 
 class ZMap:
     def __init__(self, data: NDArray[np.float64], size: float, sampling_rate: int):
@@ -105,15 +104,15 @@ class PointSet:
         for sample, z_map_data in zip(self.samples, z_maps):
             sample.z_map = ZMap(z_map_data, size, sampling_rate)
 
-    def filter_by_flatness(self, threshold: float, radius: float):
+    def filter_by_flatness(self, threshold: float, radius: float) -> None:
         self.samples = [s for s in self.samples if s.z_map.is_flat(threshold, radius)]
 
-    def remove_excessive_torque_samples(self, torque_threshold: float):
+    def remove_excessive_torque_samples(self, torque_threshold: float) -> None:
         self.samples = [s for s in self.samples if (s.radial_distance_to_cog(self.cog) * self.mass) < torque_threshold]
 
     def cluster_samples(self, degree_eps: float, pos_eps: float, min_samples: int = 1) -> List[List[int]]:
         if len(self.samples) == 0:
-            raise ValueError("Cannot cluster: no samples available.")
+            return [[]]
         if len(self.samples) == 1:
             return [[0]]
         
@@ -161,18 +160,24 @@ class PointSet:
 
 class Shape:
     def __init__(self, shape: TopoDS_Shape, mesh: trimesh.Trimesh, point_distance: float):
-        from .topods_utils import compute_shape_properties
         self.shape = shape
         self.mesh = mesh
         self.point_distance = point_distance
-        volume, cog, _ = compute_shape_properties(shape)
-        self.cog = np.array([cog.X(), cog.Y(), cog.Z()])
-        density = 7.85e-3 # Steel g/mm^3
-        self.mass = volume * density
+        self.mass, self.cog, self.matrix_of_intertia = self._compute_properties()
         self.samples: PointSet = self.generate_samples()
 
-    def filter_by_mask(self, mask: NDArray[np.bool_]):
-        self.samples = self.samples.filter_by_mask(mask)
+    def _compute_properties(self):
+        from .topods_utils import compute_shape_properties
+        volume, cog, matrix_of_inertia = compute_shape_properties(self.shape)
+        cog_array = np.array([cog.X(), cog.Y(), cog.Z()])
+        density = 7.85e-3 # Steel g/mm^3
+        mass = volume * density
+        intertia_matrix = [
+            [matrix_of_inertia.Value(1, 1), matrix_of_inertia.Value(1, 2), matrix_of_inertia.Value(1, 3)],
+            [matrix_of_inertia.Value(2, 1), matrix_of_inertia.Value(2, 2), matrix_of_inertia.Value(2, 3)],
+            [matrix_of_inertia.Value(3, 1), matrix_of_inertia.Value(3, 2), matrix_of_inertia.Value(3, 3)],
+        ]
+        return mass, cog_array, intertia_matrix
 
     def generate_samples(self) -> PointSet:
         from .topods_utils import generate_face_point_clouds, filter_points_outside_face, uv_position_to_global
@@ -189,7 +194,8 @@ class Shape:
         return PointSet(points=np.array(sample_points), normals=np.array(sample_normals), cog=self.cog, mass=self.mass)
 
     def create_z_maps(self, size: float, z_threshold: float, sampling_rate: int):
-        from .geometry_utils import trimesh_z_maps
+        if len(self.samples) == 0:
+            return 0
         z_maps = trimesh_z_maps(self.samples.positions, self.samples.normals, size, self.mesh, sampling_rate, z_threshold)
         self.samples.assign_z_maps(z_maps, size, sampling_rate)
 
@@ -200,6 +206,9 @@ class Shape:
         self.samples.filter_by_flatness(threshold, radius)
 
     def get_best_cluster_samples(self) -> PointSet:
+        if len(self.samples) == 0:
+            return self.samples
+
         self.samples.order_samples_by_cog()
         clusters = self.samples.cluster_samples(degree_eps=5, pos_eps=self.point_distance * 2)
         com = self.cog
@@ -213,6 +222,24 @@ class Shape:
             cog=self.cog,
             mass=self.mass
         )
+    
+    def get_dict(self) -> Dict[str, Any]:
+        return {
+            "mass": self.mass, 
+            "centre_of_mass": list(self.cog),
+            "matrix_of_inertia": self.matrix_of_intertia,
+            "descriptions": {
+                "units": {
+                    "length": "mm",
+                    "mass": "g",
+                    "torque": "g*mm"
+                },
+                "coordinate_frame": "step_file_origin",
+                "tool_origin": "step_file_origin",
+                "position": "Global coordinate using step file coordinate space.",
+                "normal": "Pointing towards the approach direction."
+            }
+        }
 
 class Tools(ABC):
     def __init__(self, name: str):
@@ -223,31 +250,49 @@ class Tools(ABC):
         pass
 
 class SpongeTool(Tools):
-    def __init__(self, width: float, height: float, max_torque: float, max_convex_curve: float, min_coverage: float):
-        super().__init__("SpongeTool")
-        self.width = width
-        self.height = height
-        self.max_width = math.sqrt(width*width + height*height)
+    def __init__(self, name: str, max_width: float, max_height_diff: float, max_torque: float):
+        super().__init__(name)
+        self.max_width = max_width
+        self.max_height_diff = max_height_diff
         self.max_torque = max_torque
-        self.max_convex_curve = max_convex_curve
-        self.min_coverage = min_coverage
+
+    def filter_points(self, shape: Shape) -> PointSet:
+        shape.remove_excessive_torque_samples(self.max_torque)
+        shape.create_z_maps(self.max_width * 2 + 1, z_threshold=1e5, sampling_rate=20)
+        shape.remove_nonflat_samples(self.max_height_diff, self.max_width)
+        best_samples = shape.get_best_cluster_samples()
+        return best_samples
+    
+    def get_dict(self) -> Dict[str, Any]:
+        return {"name": self.name,
+                "type": "sponge",
+                "max_width": self.max_width,
+                "max_height_diff": self.max_height_diff,
+                "max_torque": self.max_torque}
 
 class SuctionTool(Tools):
-    def __init__(self, max_width: float, max_height_diff: float, max_torque: float):
-        super().__init__("SuctionTool")
+    def __init__(self, name: str, max_width: float, max_height_diff: float, max_torque: float):
+        super().__init__(name)
         self.max_width = max_width
         self.max_height_diff = max_height_diff
         self.max_torque = max_torque
     
     def filter_points(self, shape: Shape) -> PointSet:
         shape.remove_excessive_torque_samples(self.max_torque)
-        shape.create_z_maps(self.max_width * 2, z_threshold=400, sampling_rate=20)
+        shape.create_z_maps(self.max_width * 2 + 1, z_threshold=1e5, sampling_rate=20)
         shape.remove_nonflat_samples(self.max_height_diff, self.max_width)
         best_samples = shape.get_best_cluster_samples()
         return best_samples
     
+    def get_dict(self) -> Dict[str, Any]:
+        return {"name": self.name,
+                "type": "suction",
+                "max_width": self.max_width,
+                "max_height_diff": self.max_height_diff,
+                "max_torque": self.max_torque}
+    
 class GripperTool(Tools):
-    def __init__(self, min_width: float, max_width: float, min_depth: float, max_depth: float, max_force: float, friction: float):
+    def __init__(self, name: str, min_width: float, max_width: float, min_depth: float, max_depth: float, max_force: float, friction: float):
         super().__init__("GripperTool")
         self.min_width = min_width
         self.max_width = max_width
