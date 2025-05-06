@@ -60,7 +60,7 @@ def extract_tool_json(data: Dict[str, Any], tool_type: str) -> Tools:
     max_height_diff = distances.get("max_height_diff", 0.5)
 
     if tool_type == "sponge":
-        max_width = np.linalg.norm(np.array(list(dimensions.values())))
+        max_width = max(dimensions["x"], dimensions["y"])
         if max_torque:
             return SpongeTool(name, max_width=max_width / 2, max_height_diff=max_height_diff, max_torque=max_torque)
         else:
