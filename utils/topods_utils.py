@@ -2,18 +2,31 @@ from OCC.Core.BRepAdaptor import BRepAdaptor_Surface
 from OCC.Core.TopoDS import TopoDS_Face, TopoDS_Shape, TopoDS_Wire, TopoDS_Edge
 from OCC.Core.TopAbs import TopAbs_ShapeEnum, TopAbs_REVERSED
 from OCC.Core.GeomAbs import GeomAbs_Cylinder, GeomAbs_Sphere, GeomAbs_Torus, GeomAbs_Cone, GeomAbs_SurfaceOfRevolution
-from OCC.Core.gp import gp_Vec
+from OCC.Core.gp import gp_Vec, gp_Dir, gp_Lin, gp_Pln, gp_Ax2, gp_Ax3, gp_Trsf
 from OCC.Core.TopExp import TopExp_Explorer
 from OCC.Core.BRepLProp import BRepLProp_SLProps
 from OCC.Core.TDocStd import TDocStd_Document
 from OCC.Core.STEPCAFControl import STEPCAFControl_Reader
 from OCC.Core.BRep import BRep_Tool
 from OCC.Core.ShapeAnalysis import ShapeAnalysis_Surface
-from OCC.Core.TopAbs import TopAbs_FACE, TopAbs_IN
+from OCC.Core.TopAbs import TopAbs_FACE, TopAbs_IN, TopAbs_EDGE, TopAbs_ON
 from OCC.Core.BRepClass import BRepClass_FaceClassifier
 from OCC.Core.GProp import GProp_GProps
 from OCC.Core.BRepGProp import brepgprop
 from OCC.Core.gp import gp_Pnt, gp_Mat
+from OCC.Core.BRepTools import breptools
+from OCC.Core.BRepBuilderAPI import BRepBuilderAPI_MakeVertex, BRepBuilderAPI_MakeFace, BRepBuilderAPI_Transform
+from OCC.Core.BRepExtrema import BRepExtrema_DistShapeShape
+from OCC.Core.BRepAlgoAPI import BRepAlgoAPI_Section
+from OCC.Core.BRepClass3d import BRepClass3d_SolidClassifier
+from OCC.Core.TopTools import TopTools_HSequenceOfShape
+from OCC.Core.ShapeAnalysis import ShapeAnalysis_FreeBounds
+from OCC.Core.BRepPrimAPI import BRepPrimAPI_MakeBox
+from OCC.Core.TopoDS import TopoDS_Compound
+from OCC.Core.BRep import BRep_Builder
+
+from OCC.Core.IntCurvesFace import IntCurvesFace_ShapeIntersector
+import math
 
 from typing import List, Any, Dict, Tuple, Optional, Callable
 from numpy.typing import NDArray
@@ -176,7 +189,7 @@ def filter_distance_from_outer_wire(points: PointSet, face: TopoDS_Face, min_dis
 
 def compute_distance_to_shape(point: gp_Pnt, shape: TopoDS_Shape) -> float:
     # Create vertex from gp_pnt
-    vertex = BRepBuilderAPI_MakeVertex(gp_Pnt(*point)).Vertex()
+    vertex = BRepBuilderAPI_MakeVertex(point).Vertex()
     # Shortest distance measure
     dss = BRepExtrema_DistShapeShape(vertex, shape)
     dss.Perform()

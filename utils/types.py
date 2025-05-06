@@ -85,6 +85,9 @@ class PointSet:
     def __getitem__(self, idx: int) -> PointSample:
         return self.samples[idx]
     
+    def filter_by_mask(self, mask: NDArray[np.bool_]) -> "PointSet":
+        return PointSet(self.positions[mask], self.normals[mask])
+    
     @property
     def has_z_map(self) -> bool:
         return bool(self.samples) and all(s.has_z_map for s in self.samples)
