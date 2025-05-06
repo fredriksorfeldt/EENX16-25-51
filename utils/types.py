@@ -292,14 +292,13 @@ class SuctionTool(Tools):
                 "max_torque": self.max_torque}
     
 class GripperTool(Tools):
-    def __init__(self, name: str, min_width: float, max_width: float, min_depth: float, max_depth: float, max_force: float, friction: float):
+    def __init__(self, name: str, min_width: float, max_width: float, min_depth: float, max_depth: float, max_force: float):
         super().__init__("GripperTool")
         self.min_width = min_width
         self.max_width = max_width
         self.min_depth = min_depth
         self.max_depth = max_depth
         self.max_force = max_force
-        self.friction = friction
 
     def filter_points(self, shape: Shape) -> PointSet:
         from utils.topods_utils import filter_distance_from_outer_wire, filter_point_pairs, filter_closest_orthogonal, filter_gripper_occlution, filter_clustered_points

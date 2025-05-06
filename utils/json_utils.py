@@ -4,7 +4,7 @@ from typing import Dict, List, Any
 import numpy as np
 import time
 
-from utils.types import SuctionTool, Tools, SpongeTool, Shape
+from utils.types import GripperTool, SuctionTool, Tools, SpongeTool, Shape
 
 def get_export_filename(base_name: str = "points", directory: str = "."):
     index = 1
@@ -71,3 +71,7 @@ def extract_tool_json(data: Dict[str, Any], tool_type: str) -> Tools:
             return SuctionTool(name, max_width=diameter / 2, max_height_diff=max_height_diff, max_torque=max_torque)
         else:
             return SuctionTool(name, max_width=diameter / 2, max_height_diff=max_height_diff, max_torque=1e8)
+    elif tool_type == "gripper":
+        return GripperTool(name, min_width=distances.get("min_stroke"), max_width=distances.get("max_stroke"), min_depth=distances.get("min_reach"), max_depth=distances.get("max_reach"), max_force=load.get("max_force"))
+         
+    
