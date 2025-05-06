@@ -8,6 +8,7 @@ from numpy.typing import NDArray
 from sklearn.cluster import DBSCAN
 
 from OCC.Core.TopoDS import TopoDS_Shape
+from OCC.Core.gp import gp_Pnt
 
 from .geometry_utils import trimesh_z_maps
 
@@ -179,10 +180,22 @@ class Shape:
         ]
         return mass, cog_array, intertia_matrix
 
-    def generate_samples(self) -> PointSet:
+    def generate_samples(self, face_points=False) -> PointSet:
         from .topods_utils import generate_face_point_clouds, filter_points_outside_face, uv_position_to_global
 
         samples = generate_face_point_clouds(self.shape, self.point_distance)
+
+
+        if face_points:
+            face_points_dict = {}
+
+            for face, points in samples.items():
+                surface_points = filter_points_outside_face(points, face)
+                _points, _normals = uv_position_to_global(surface_points, face)
+                face_points_dict[face] = PointSet(points=_points, normals=_normals)
+
+            return face_points_dict
+
         sample_points, sample_normals = [], []
 
         for face, points in samples.items():
@@ -305,7 +318,7 @@ class GripperTool(Tools):
         from numpy import pi
 
         cog = gp_Pnt(*shape.cog)
-        face_points = shape.generate_samples(shape.point_distance, face_points=True)
+        face_points = shape.generate_samples(face_points=True)
         valid_points = []
 
         if isinstance(face_points, Dict):

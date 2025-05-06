@@ -41,7 +41,7 @@ def import_tools(tool_folder_path: str) -> List[Tools]:
                 try:
                     data = json.load(file)
                     tool_type = data.get("type")
-                    if tool_type in ["sponge", "suction"]:
+                    if tool_type in ["sponge", "suction", "gripper"]:
                         tools.append(extract_tool_json(data, tool_type))
                     
                 except json.JSONDecodeError as e:
