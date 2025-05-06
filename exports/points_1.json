@@ -1,0 +1,90 @@
+{
+    "export_time": "Tue May  6 15:05:46 2025",
+    "meta": {
+        "mass": 445.53569702911426,
+        "centre_of_mass": [
+            23.154210812297645,
+            -32.357523034399144,
+            -19.21234664797617
+        ],
+        "matrix_of_inertia": [
+            [
+                112035150.927767,
+                26796820.71273934,
+                -13498780.360737912
+            ],
+            [
+                26796820.71273934,
+                249552507.4582342,
+                -29495645.004297107
+            ],
+            [
+                -13498780.360737912,
+                -29495645.004297107,
+                260541019.36380076
+            ]
+        ],
+        "descriptions": {
+            "units": {
+                "length": "mm",
+                "mass": "g",
+                "torque": "g*mm"
+            },
+            "coordinate_frame": "step_file_origin",
+            "tool_origin": "step_file_origin",
+            "position": "Global coordinate using step file coordinate space.",
+            "normal": "Pointing towards the approach direction."
+        }
+    },
+    "point_sets": {
+        "tool_0": {
+            "specifications": {
+                "name": "Kenos KCS Foam-110",
+                "type": "sponge",
+                "max_width": 79.21489758877429,
+                "max_height_diff": 20,
+                "max_torque": 100000000.0
+            },
+            "points": {}
+        },
+        "tool_1": {
+            "specifications": {
+                "name": "Piab piGRIP S-35",
+                "type": "suction",
+                "max_width": 17.5,
+                "max_height_diff": 0.5,
+                "max_torque": 100000000.0
+            },
+            "points": {
+                "point_0": {
+                    "position": {
+                        "x": 11.597192055825914,
+                        "y": -28.37533356910147,
+                        "z": -2.5
+                    },
+                    "quaternion": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 6.123233995736766e-17
+                    },
+                    "max_torque": 5446.16165136412
+                },
+                "point_1": {
+                    "position": {
+                        "x": 11.597192055825914,
+                        "y": -28.37533356910147,
+                        "z": 0.0
+                    },
+                    "quaternion": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "max_torque": 5446.16165136412
+                }
+            }
+        }
+    }
+}
