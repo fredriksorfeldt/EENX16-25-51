@@ -192,7 +192,7 @@ class Shape:
             for face, points in samples.items():
                 surface_points = filter_points_outside_face(points, face)
                 _points, _normals = uv_position_to_global(surface_points, face)
-                face_points_dict[face] = PointSet(points=_points, normals=_normals)
+                face_points_dict[face] = PointSet(points=_points, normals=_normals, self.cog, self.mass)
 
             return face_points_dict
 
