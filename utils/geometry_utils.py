@@ -52,7 +52,7 @@ def trimesh_z_maps(points: NDArray[np.float64], normals: NDArray[np.float64], si
 
         z_max_maps.append(z_map)
 
-    return np.array(z_max_maps)
+    return np.array(z_max_maps), transform_matrices
 
 def remove_tiny_triangles(triangles: NDArray[np.float64], min_area: float) -> NDArray[np.bool_]:
     areas = triangle_areas(triangles)

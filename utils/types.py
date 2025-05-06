@@ -6,18 +6,20 @@ import time
 import trimesh
 from numpy.typing import NDArray
 from sklearn.cluster import DBSCAN
+from scipy.ndimage import rotate
 
 from OCC.Core.TopoDS import TopoDS_Shape
 
 from .geometry_utils import trimesh_z_maps
 
 class ZMap:
-    def __init__(self, data: NDArray[np.float64], size: float, sampling_rate: int):
+    def __init__(self, data: NDArray[np.float64], transformation_matrix: NDArray[np.float64], size: float, sampling_rate: int):
         self.data: NDArray[np.float64] = data
         self.size: float = size
         self.sampling_rate: int = sampling_rate
+        self.transformation_matrix: NDArray[np.float64] = transformation_matrix
 
-    def extract_patch(self, radius: float) -> NDArray[np.float64]:
+    def extract_circle_patch(self, radius: float) -> NDArray[np.float64]:
         if self.data is None:
             raise RuntimeError("Z-map data not initialized")
 
@@ -34,8 +36,38 @@ class ZMap:
 
         return self.data[mask_flat]
     
+    def extract_rectangle_patches(self, width: float, height: float, rotations: int = 4):
+        step_size = self.size / self.sampling_rate
+
+        patch_width_px = int(width / step_size)
+        patch_height_px = int(height / step_size)
+
+        if patch_width_px > self.sampling_rate or patch_height_px > self.sampling_rate:
+            raise ValueError("Patch goes out of bounds")
+        
+        center_y, center_x = self.sampling_rate // 2, self.sampling_rate // 2
+        half_h = patch_height_px // 2
+        half_w = patch_width_px // 2
+
+        mask = np.zeros((self.sampling_rate, self.sampling_rate), dtype=bool)
+
+        mask[
+            center_y - half_h:center_y + half_h,
+            center_x - half_w:center_x + half_w
+        ] = True
+        
+        rectangle_patches = []
+        angles = []
+        for i in range(rotations):
+            angle = (360 / rotations) * i
+            angles.append(angle)
+            rotated = rotate(mask.astype(float), angle, reshape=False, order=0) > 0.5
+            rectangle_patches.append(self.data[rotated])
+
+        return rectangle_patches, angles
+    
     def is_flat(self, threshold: float, radius: float) -> np.bool_:
-        patch = self.extract_patch(radius)
+        patch = self.extract_circle_patch(radius)
         return np.all(np.abs(patch) < threshold)
 
 class PointSample:
@@ -100,9 +132,9 @@ class PointSet:
     def z_maps(self) -> NDArray[np.float64]:
         return np.stack([s.z_map.data for s in self.samples if s.z_map is not None])
 
-    def assign_z_maps(self, z_maps: NDArray[np.float64], size: float, sampling_rate: int):
-        for sample, z_map_data in zip(self.samples, z_maps):
-            sample.z_map = ZMap(z_map_data, size, sampling_rate)
+    def assign_z_maps(self, z_maps: NDArray[np.float64], transformation_matrices: NDArray[np.float64], size: float, sampling_rate: int):
+        for sample, z_map_data, transformation_matrix in zip(self.samples, z_maps, transformation_matrices):
+            sample.z_map = ZMap(z_map_data, transformation_matrix, size, sampling_rate)
 
     def filter_by_flatness(self, threshold: float, radius: float) -> None:
         self.samples = [s for s in self.samples if s.z_map.is_flat(threshold, radius)]
@@ -196,8 +228,8 @@ class Shape:
     def create_z_maps(self, size: float, z_threshold: float, sampling_rate: int):
         if len(self.samples) == 0:
             return 0
-        z_maps = trimesh_z_maps(self.samples.positions, self.samples.normals, size, self.mesh, sampling_rate, z_threshold)
-        self.samples.assign_z_maps(z_maps, size, sampling_rate)
+        z_maps, transformation_matrices = trimesh_z_maps(self.samples.positions, self.samples.normals, size, self.mesh, sampling_rate, z_threshold)
+        self.samples.assign_z_maps(z_maps, transformation_matrices, size, sampling_rate)
 
     def remove_excessive_torque_samples(self, torque_threshold: float):
         self.samples.remove_excessive_torque_samples(torque_threshold)
