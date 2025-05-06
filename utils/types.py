@@ -300,3 +300,34 @@ class GripperTool(Tools):
         self.max_depth = max_depth
         self.max_force = max_force
         self.friction = friction
+
+    def filter_points(self, shape: Shape) -> PointSet:
+        from utils.topods_utils import filter_distance_from_outer_wire, filter_point_pairs, filter_closest_orthogonal, filter_gripper_occlution, filter_clustered_points
+        from numpy import pi
+
+        cog = gp_Pnt(*shape.cog)
+        face_points = shape.generate_samples(shape.point_distance, face_points=True)
+        valid_points = []
+
+        if isinstance(face_points, Dict):
+            for face, points in face_points.items():
+
+                if not points:
+                    continue
+            
+                points = filter_distance_from_outer_wire(points, face, self.min_depth, self.max_depth)
+                point_pairs = filter_point_pairs(points, shape.shape, pi/32, self.min_width, self.max_width)
+
+                points_widths = filter_closest_orthogonal(point_pairs, shape.shape)
+                points = filter_gripper_occlution(20, 50, points_widths, shape.shape, depth_tol=10)
+
+                valid_points.extend(points)
+
+        valid_points = filter_clustered_points(valid_points, shape.shape, lambda point: gp_Pnt(*point.position).Distance(cog), pi/16)
+        return PointSet(
+            np.array([p.position for p in valid_points]),
+            np.array([p.normal for p in valid_points]),
+            shape.cog,
+            shape.mass,
+        )
+
