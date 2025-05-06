@@ -51,7 +51,7 @@ def main(file_path: str, tool_folder_path: str):
         point_set = tool.filter_points(shape_copy)
         export_dict[f"tool_{i}"] = {"specifications": tool.get_dict(), "points": point_set.get_dict()}
 
-    export_JSON(export_dict, shape, directory="./exports")
+    export_JSON(export_dict, shape, directory="./exports", cad_file_path=args.file_path)
 
 if __name__ == "__main__":
     # Set up parsing arguments
