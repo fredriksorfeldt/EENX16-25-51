@@ -348,8 +348,12 @@ class GripperTool(Tools):
         )
 
     def get_dict(self) -> Dict[str, Any]:
-        return {"name": self.name,
-                "type": "gripper",
-                "max_width": self.max_width,
-                "max_height_diff": self.max_height_diff,
-                "max_torque": self.max_torque}
+        return {
+            "name": self.name,
+            "type": "gripper",
+            "min_width": self.min_width,
+            "max_width": self.max_width,
+            "min_depth": self.min_depth,
+            "max_depth": self.max_depth,
+            "max_force": self.max_force,
+        }
