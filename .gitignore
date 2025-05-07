@@ -1,6 +1,7 @@
 # Ignore the "cads" directory
 cads/
 
+# Ignore exports directory
 exports/
 
 # Ignore Python cache files

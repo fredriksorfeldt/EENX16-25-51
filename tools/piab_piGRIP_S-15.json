@@ -1,17 +1,17 @@
 {
-    "name": "Piab piGRIP S-35",
+    "name": "Piab piGRIP S-15",
     "type": "suction",
     "source": "https://www.piab.com/en-us/suction-cups-and-soft-grippers/modular-suction-cups/pigrip-configurable-suction-cups/g.x",
     "specification": {
         "end_effector": {
             "type": "circular",
             "dimensions": {
-                "diameter": 35
+                "diameter": 15
             }
         },
         "max_load": {
-            "max_payload": 3.52,
-            "max_force": 34.5,
+            "max_payload": 0.87,
+            "max_force": 8.5,
             "max_torque": false
         },
         "max_distances": {
