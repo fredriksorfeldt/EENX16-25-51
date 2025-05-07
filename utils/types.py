@@ -346,6 +346,8 @@ class GripperTool(Tools):
                 valid_points.extend(points)
 
         # valid_points = filter_clustered_points(valid_points, shape.shape, lambda point: gp_Pnt(*point.position).Distance(cog), pi/16)
+
+        print(f"# points: {len(valid_points)}")
         return PointSet(
             np.array([p.position for p in valid_points]),
             np.array([p.normal for p in valid_points]),
