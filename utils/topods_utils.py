@@ -16,8 +16,8 @@ from OCC.Core.STEPCAFControl import STEPCAFControl_Reader
 from OCC.Core.ShapeAnalysis import ShapeAnalysis_Surface
 from OCC.Core.ShapeAnalysis import ShapeAnalysis_FreeBounds
 from OCC.Core.IntCurvesFace import IntCurvesFace_ShapeIntersector
-from OCC.Core.TopoDS import TopoDS_Shape, TopoDS_Wire, TopoDS_Edge, TopAbs_FACE, TopAbs_IN, TopAbs_ON, TopoDS_Compound
-from OCC.Core.TopAbs import TopAbs_ShapeEnum, TopAbs_REVERSED
+from OCC.Core.TopoDS import TopoDS_Shape, TopoDS_Wire, TopoDS_Edge, TopoDS_Compound, TopoDS_Face
+from OCC.Core.TopAbs import TopAbs_ShapeEnum, TopAbs_REVERSED, TopAbs_FACE, TopAbs_IN, TopAbs_ON
 from OCC.Core.TopExp import TopExp_Explorer
 from OCC.Core.TopTools import TopTools_HSequenceOfShape
 from OCC.Core.TDocStd import TDocStd_Document

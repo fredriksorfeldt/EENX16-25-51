@@ -1,4 +1,5 @@
 import sys
+from OCC.Core.TopoDS import TopoDS_Vertex
 import trimesh
 import argparse
 import copy
@@ -8,6 +9,7 @@ from utils.types import *
 from utils.topods_utils import load_step_shape
 from utils.json_utils import import_tools, export_JSON
 from OCC.Display.SimpleGui import init_display
+from OCC.Core.BRep import BRep_Builder
 
 def main(file_path: str, tool_folder_path: str):
     # Load as opencascade object
@@ -51,7 +53,13 @@ def main(file_path: str, tool_folder_path: str):
 
         display, start_display, _, _ = init_display()
         display.DisplayShape(shape.shape)
-        display.DisplayShape([gp_Pnt(*point.position) for point in point_set.samples])
+        for point in point_set.samples:
+            p = gp_Pnt(*point)
+            builder = BRep_Builder()
+            vertex = TopoDS_Vertex()
+            builder.MakeVertex(vertex, p, 1e-6)
+
+            display.DisplayShape(vertex)
 
         start_display()
 
