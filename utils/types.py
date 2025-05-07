@@ -1,16 +1,14 @@
-
 from abc import ABC, abstractmethod
 from typing import List, Dict, Any
 import numpy as np
-import time
 import trimesh
 from numpy.typing import NDArray
 from sklearn.cluster import DBSCAN
 
-from OCC.Core.TopoDS import TopoDS_Shape, TopoDS_Face
-from OCC.Core.gp import gp_Pnt
 from OCC.Core.BRepAdaptor import BRepAdaptor_Surface
 from OCC.Core.GeomAbs import GeomAbs_Plane
+from OCC.Core.gp import gp_Pnt, gp_Ax2, gp_Dir
+from OCC.Core.TopoDS import TopoDS_Shape, TopoDS_Face
 
 from .geometry_utils import trimesh_z_maps
 
@@ -45,6 +43,7 @@ class PointSample:
     def __init__(self, position: NDArray[np.float64], normal: NDArray[np.float64]):
         self.position = position
         self.normal = normal
+        self.orientation = gp_Ax2(gp_Pnt(*self.position), gp_Dir(*self.normal))
         self.z_map: ZMap | None = None
     
     @property
@@ -86,6 +85,9 @@ class PointSet:
     
     def __getitem__(self, idx: int) -> PointSample:
         return self.samples[idx]
+    
+    def filter_by_mask(self, mask: NDArray[np.bool_]) -> "PointSet":
+        return PointSet(self.positions[mask], self.normals[mask], cog=self.cog, mass=self.mass)
     
     @property
     def has_z_map(self) -> bool:
@@ -329,17 +331,21 @@ class GripperTool(Tools):
                 if not points:
                     continue
             
+                valid_points.extend(points)
+                break
                 surface = BRepAdaptor_Surface(face)
                 if surface.GetType == GeomAbs_Plane:
                     points = filter_distance_from_outer_wire(points, face, self.min_depth, self.max_depth)
+
                 point_pairs = filter_point_pairs(points, shape.shape, pi/32, self.min_width, self.max_width)
 
                 points_widths = filter_closest_orthogonal(point_pairs, shape.shape)
+
                 points = filter_gripper_occlution(20, 50, points_widths, shape.shape, depth_tol=10)
 
                 valid_points.extend(points)
 
-        valid_points = filter_clustered_points(valid_points, shape.shape, lambda point: gp_Pnt(*point.position).Distance(cog), pi/16)
+        # valid_points = filter_clustered_points(valid_points, shape.shape, lambda point: gp_Pnt(*point.position).Distance(cog), pi/16)
         return PointSet(
             np.array([p.position for p in valid_points]),
             np.array([p.normal for p in valid_points]),
@@ -347,3 +353,13 @@ class GripperTool(Tools):
             shape.mass,
         )
 
+    def get_dict(self) -> Dict[str, Any]:
+        return {
+            "name": self.name,
+            "type": "gripper",
+            "min_width": self.min_width,
+            "max_width": self.max_width,
+            "min_depth": self.min_depth,
+            "max_depth": self.max_depth,
+            "max_force": self.max_force,
+        }

@@ -1,24 +1,33 @@
+from OCC.Core.BRep import BRep_Tool, BRep_Builder
+from OCC.Core.BRepPrimAPI import BRepPrimAPI_MakeBox
 from OCC.Core.BRepAdaptor import BRepAdaptor_Surface
-from OCC.Core.TopoDS import TopoDS_Face, TopoDS_Shape, TopoDS_Wire, TopoDS_Edge
-from OCC.Core.TopAbs import TopAbs_ShapeEnum, TopAbs_REVERSED
-from OCC.Core.GeomAbs import GeomAbs_Cylinder, GeomAbs_Sphere, GeomAbs_Torus, GeomAbs_Cone, GeomAbs_SurfaceOfRevolution
-from OCC.Core.gp import gp_Vec
-from OCC.Core.TopExp import TopExp_Explorer
-from OCC.Core.BRepLProp import BRepLProp_SLProps
-from OCC.Core.TDocStd import TDocStd_Document
-from OCC.Core.STEPCAFControl import STEPCAFControl_Reader
-from OCC.Core.BRep import BRep_Tool
-from OCC.Core.ShapeAnalysis import ShapeAnalysis_Surface
-from OCC.Core.TopAbs import TopAbs_FACE, TopAbs_IN
-from OCC.Core.BRepClass import BRepClass_FaceClassifier
-from OCC.Core.GProp import GProp_GProps
 from OCC.Core.BRepGProp import brepgprop
-from OCC.Core.gp import gp_Pnt, gp_Mat
-from OCC.Core.BRepTool
+from OCC.Core.BRepTools import breptools
+from OCC.Core.BRepBuilderAPI import BRepBuilderAPI_MakeVertex, BRepBuilderAPI_MakeFace, BRepBuilderAPI_Transform
+from OCC.Core.BRepExtrema import BRepExtrema_DistShapeShape
+from OCC.Core.BRepAlgoAPI import BRepAlgoAPI_Section
+from OCC.Core.BRepClass3d import BRepClass3d_SolidClassifier
+from OCC.Core.BRepClass import BRepClass_FaceClassifier
+from OCC.Core.BRepLProp import BRepLProp_SLProps
+from OCC.Core.gp import gp_Vec, gp_Dir, gp_Lin, gp_Pln, gp_Ax2, gp_Ax3, gp_Trsf, gp_Pnt, gp_Mat
+from OCC.Core.GeomAbs import GeomAbs_Cylinder, GeomAbs_Sphere, GeomAbs_Torus, GeomAbs_Cone, GeomAbs_SurfaceOfRevolution
+from OCC.Core.GProp import GProp_GProps
+from OCC.Core.STEPCAFControl import STEPCAFControl_Reader
+from OCC.Core.ShapeAnalysis import ShapeAnalysis_Surface
+from OCC.Core.ShapeAnalysis import ShapeAnalysis_FreeBounds
+from OCC.Core.IntCurvesFace import IntCurvesFace_ShapeIntersector
+from OCC.Core.TopoDS import TopoDS_Shape, TopoDS_Wire, TopoDS_Edge, TopAbs_FACE, TopAbs_IN, TopAbs_ON, TopoDS_Compound
+from OCC.Core.TopAbs import TopAbs_ShapeEnum, TopAbs_REVERSED
+from OCC.Core.TopExp import TopExp_Explorer
+from OCC.Core.TopTools import TopTools_HSequenceOfShape
+from OCC.Core.TDocStd import TDocStd_Document
 
 from typing import List, Any, Dict, Tuple, Optional, Callable
 from numpy.typing import NDArray
+
 import numpy as np
+import math
+
 from .types import PointSet, PointSample
 
 def load_step_shape(file_path: str) -> TopoDS_Shape:
@@ -91,11 +100,11 @@ def compute_total_face_area(faces: List[TopoDS_Face]) -> float:
 def filter_large_faces(faces: List[TopoDS_Face], min_area: float = 75) -> List[TopoDS_Face]:
     return [f for f in faces if compute_face_area(f) > min_area]        
 
-def generate_face_point_clouds(shape: TopoDS_Shape, point_distance: float) -> Dict[TopoDS_Face, List[NDArray[np.float64]]]:
+def generate_face_point_clouds(shape: TopoDS_Shape, point_distance: float) ->   Dict[TopoDS_Face, List[NDArray[np.float64]]]:
     faces = list(extract_subshapes(shape, TopAbs_FACE))
     large_faces = filter_large_faces(faces, min_area=10)
 
-    face_point_clouds: Dict[TopoDS_Face, List[tuple[float, float]]] = {}
+    face_point_clouds: Dict[TopoDS_Face, List[NDArray[np.float64]]] = {}
     for face in large_faces:
         face_point_clouds[face] = generate_uniform_points_on_face(face, point_distance)
     
@@ -177,7 +186,7 @@ def filter_distance_from_outer_wire(points: PointSet, face: TopoDS_Face, min_dis
 
 def compute_distance_to_shape(point: gp_Pnt, shape: TopoDS_Shape) -> float:
     # Create vertex from gp_pnt
-    vertex = BRepBuilderAPI_MakeVertex(gp_Pnt(*point)).Vertex()
+    vertex = BRepBuilderAPI_MakeVertex(point).Vertex()
     # Shortest distance measure
     dss = BRepExtrema_DistShapeShape(vertex, shape)
     dss.Perform()

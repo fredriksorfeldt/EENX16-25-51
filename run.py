@@ -7,6 +7,7 @@ import numpy as np
 from utils.types import *
 from utils.topods_utils import load_step_shape
 from utils.json_utils import import_tools, export_JSON
+from OCC.Display.SimpleGui import init_display
 
 def main(file_path: str, tool_folder_path: str):
     # Load as opencascade object
@@ -47,6 +48,12 @@ def main(file_path: str, tool_folder_path: str):
         shape_copy = copy.deepcopy(shape)
         point_set = tool.filter_points(shape_copy)
         export_dict[f"tool_{i}"] = {"specifications": tool.get_dict(), "points": point_set.get_dict()}
+
+        display, start_display, _, _ = init_display()
+        display.DisplayShape(shape.shape)
+        display.DisplayShape([gp_Pnt(*point.position) for point in point_set.samples])
+
+        start_display()
 
     export_JSON(export_dict, shape, directory="./exports")
 
