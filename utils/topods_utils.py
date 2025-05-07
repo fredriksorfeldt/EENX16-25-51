@@ -244,7 +244,7 @@ def ray_intersect(point: PointSample, shape: TopoDS_Shape, up:bool=True) -> List
 
     backs = []
     if intersector.IsDone() and intersector.NbPnt() > 0:
-        for i in range(1, intersector.NbPnt(), 2):
+        for i in range(1, intersector.NbPnt() + 1, 2):
             normal = uv_normal(intersector.Face(i), intersector.UParameter(i), intersector.VParameter(i))
             backs.append(PointSample(np.array(intersector.Pnt(1).Coord()), np.array(normal)))
 
