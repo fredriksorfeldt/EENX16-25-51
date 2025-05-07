@@ -62,31 +62,6 @@ def load_tool_from_json(json_path: str) -> (SuctionTool | SpongeTool | GripperTo
     
     # Gripper tools
     if tool_type == "gripper":
-        # TODO
-        """
-
-    "specification": {
-        "end_effector": {
-            "type": "rectangular",
-            "dimensions": {
-                "y": 27,
-                "z": 65.5
-            }
-        },
-        "max_load": {
-            "max_payload": 2.5,
-            "max_force": 125,
-            "max_torque": false
-        },
-        "max_distances": {
-            "min_reach": 0,
-            "max_reach": 142.8,
-            "min_stroke": 0,
-            "max_stroke": 140
-        }
-    }
-}
-            """
         min_width = data["specification"]["max_distances"]["min_stroke"]
         max_width = data["specification"]["max_distances"]["max_stroke"]
         min_depth = data["specification"]["max_distances"]["min_reach"]

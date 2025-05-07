@@ -8,7 +8,7 @@ from numpy.typing import NDArray
 from sklearn.cluster import DBSCAN
 
 from OCC.Core.TopoDS import TopoDS_Shape
-from OCC.Core.gp import gp_Pnt
+from OCC.Core.gp import gp_Pnt, gp_Ax2, gp_Dir
 
 from .geometry_utils import trimesh_z_maps
 
@@ -43,6 +43,7 @@ class PointSample:
     def __init__(self, position: NDArray[np.float64], normal: NDArray[np.float64]):
         self.position = position
         self.normal = normal
+        self.orientation = gp_Ax2(gp_Pnt(*self.position), gp_Dir(*self.normal))
         self.z_map: ZMap | None = None
     
     @property
@@ -86,7 +87,7 @@ class PointSet:
         return self.samples[idx]
     
     def filter_by_mask(self, mask: NDArray[np.bool_]) -> "PointSet":
-        return PointSet(self.positions[mask], self.normals[mask])
+        return PointSet(self.positions[mask], self.normals[mask], cog=self.cog, mass=self.mass)
     
     @property
     def has_z_map(self) -> bool:
