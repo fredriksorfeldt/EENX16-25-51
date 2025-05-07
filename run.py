@@ -54,7 +54,7 @@ def main(file_path: str, tool_folder_path: str):
         display, start_display, _, _ = init_display()
         display.DisplayShape(shape.shape)
         for point in point_set.samples:
-            p = gp_Pnt(*point)
+            p = gp_Pnt(*point.position)
             builder = BRep_Builder()
             vertex = TopoDS_Vertex()
             builder.MakeVertex(vertex, p, 1e-6)
