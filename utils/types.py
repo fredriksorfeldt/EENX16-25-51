@@ -2,8 +2,8 @@
 from abc import ABC, abstractmethod
 from typing import List, Dict, Any
 import numpy as np
-import time
 import trimesh
+import copy
 from numpy.typing import NDArray
 from sklearn.cluster import DBSCAN
 from scipy.ndimage import rotate
@@ -15,11 +15,20 @@ from .geometry_utils import trimesh_z_maps
 class ZMap:
     def __init__(self, data: NDArray[np.float64], transformation_matrix: NDArray[np.float64], size: float, sampling_rate: int):
         self.data: NDArray[np.float64] = data
+        self.transformation_matrix = transformation_matrix
         self.size: float = size
         self.sampling_rate: int = sampling_rate
-        self.transformation_matrix: NDArray[np.float64] = transformation_matrix
 
-    def extract_circle_patch(self, radius: float) -> NDArray[np.float64]:
+    def rotate(self, theta: float):
+        Rz = np.array([
+              [np.cos(theta),-np.sin(theta), 0, 0], 
+              [np.sin(theta), np.cos(theta), 0, 0],
+              [0,             0,             1, 0],
+              [0,             0,             0, 1]
+        ])
+        self.transformation_matrix = np.dot(self.transformation_matrix, Rz)
+
+    def extract_patch(self, radius: float) -> NDArray[np.float64]:
         if self.data is None:
             raise RuntimeError("Z-map data not initialized")
 
@@ -28,7 +37,6 @@ class ZMap:
         
         step_size = self.size / self.sampling_rate
         center = (self.sampling_rate - 1) / 2
-
         y, x = np.ogrid[:self.sampling_rate, :self.sampling_rate]
         dist = np.sqrt((x - center)**2 + (y - center)**2) * step_size
         mask = dist <= radius
@@ -46,29 +54,40 @@ class ZMap:
             raise ValueError("Patch goes out of bounds")
         
         center_y, center_x = self.sampling_rate // 2, self.sampling_rate // 2
-        half_h = patch_height_px // 2
-        half_w = patch_width_px // 2
+        half_h, half_w = patch_height_px // 2, patch_width_px // 2
 
         mask = np.zeros((self.sampling_rate, self.sampling_rate), dtype=bool)
-
         mask[
             center_y - half_h:center_y + half_h,
             center_x - half_w:center_x + half_w
         ] = True
         
-        rectangle_patches = []
-        angles = []
+        patches, angles = [], []
         for i in range(rotations):
-            angle = (360 / rotations) * i
+            angle = (2 * np.pi / rotations) * i
+            rotated_mask = rotate(mask.astype(float), angle, reshape=False, order=0) > 0.5
+            rotated_mask = np.resize(rotated_mask, self.data.shape)
+            patch = np.where(rotated_mask, self.data, np.nan)
+            patches.append(patch)
             angles.append(angle)
-            rotated = rotate(mask.astype(float), angle, reshape=False, order=0) > 0.5
-            rectangle_patches.append(self.data[rotated])
 
-        return rectangle_patches, angles
+        return patches, angles
     
-    def is_flat(self, threshold: float, radius: float) -> np.bool_:
-        patch = self.extract_circle_patch(radius)
-        return np.all(np.abs(patch) < threshold)
+    def is_flat(self, penetration_threshold: float, patch: NDArray[np.float64]) -> np.bool_:
+        return np.all(np.abs(patch) < penetration_threshold)
+    
+    def is_covered(self, coverage_threshold: float, penetration_threshold: float, patch: NDArray[np.float64]) -> np.bool_:
+        peak_value = np.nanmax(patch)
+        difference = np.abs(patch - peak_value)
+
+        valid_mask = difference <= penetration_threshold
+
+        n_valids = np.sum(valid_mask)
+        total_values = patch.size
+        fraction = n_valids / total_values
+
+        return fraction >= coverage_threshold
+
 
 class PointSample:
     def __init__(self, position: NDArray[np.float64], normal: NDArray[np.float64]):
@@ -90,17 +109,8 @@ class PointSample:
         from .geometry_utils import normal_to_quaternion
         quat = normal_to_quaternion(self.normal)
         return {
-            "position": {
-                "x": self.position[0], 
-                "y": self.position[1], 
-                "z": self.position[2]
-            },
-            "quaternion": {
-                "x": float(quat[0]), 
-                "y": float(quat[1]), 
-                "z": float(quat[2]),
-                "w": float(quat[3])
-            },
+            "position": { "x": self.position[0], "y": self.position[1], "z": self.position[2]},
+            "quaternion": { "x": float(quat[0]), "y": float(quat[1]), "z": float(quat[2]),"w": float(quat[3])},
             "max_torque": self.radial_distance_to_cog(cog) * mass
         }
 
@@ -132,12 +142,23 @@ class PointSet:
     def z_maps(self) -> NDArray[np.float64]:
         return np.stack([s.z_map.data for s in self.samples if s.z_map is not None])
 
-    def assign_z_maps(self, z_maps: NDArray[np.float64], transformation_matrices: NDArray[np.float64], size: float, sampling_rate: int):
-        for sample, z_map_data, transformation_matrix in zip(self.samples, z_maps, transformation_matrices):
-            sample.z_map = ZMap(z_map_data, transformation_matrix, size, sampling_rate)
+    def assign_z_maps(self, z_maps: NDArray[np.float64], transform_matrices: NDArray[np.float64], size: float, sampling_rate: int):
+        for sample, z_map_data, transform_matrix in zip(self.samples, z_maps, transform_matrices):
+            sample.z_map = ZMap(z_map_data, transform_matrix, size, sampling_rate)
 
-    def filter_by_flatness(self, threshold: float, radius: float) -> None:
-        self.samples = [s for s in self.samples if s.z_map.is_flat(threshold, radius)]
+    def filter_nonflat(self, penetration_threshold: float, radius: float) -> None:
+        self.samples = [s for s in self.samples if s.z_map.is_flat(penetration_threshold, s.z_map.extract_patch(radius))]
+
+    def filter_noncovered(self, coverage_threshold: float, penetration_threshold: float, width: float, height: float):
+        new_samples = []
+        for s in self.samples:
+            patches, angles = s.z_map.extract_rectangle_patches(width, height)
+            for patch, angle in zip(patches, angles):
+                if s.z_map.is_covered(coverage_threshold, penetration_threshold, patch):
+                    new_sample = copy.deepcopy(s)
+                    new_sample.z_map.rotate(angle)
+                    new_samples.append(new_sample)
+        self.samples = new_samples
 
     def remove_excessive_torque_samples(self, torque_threshold: float) -> None:
         self.samples = [s for s in self.samples if (s.radial_distance_to_cog(self.cog) * self.mass) < torque_threshold]
@@ -154,18 +175,16 @@ class PointSet:
         # Angular distance matrix
         cos_sim = np.clip(normals @ normals.T, -1.0, 1.0)
         angular_dist = np.arccos(cos_sim)   # In radians
-
         angle_radians = np.radians(degree_eps)
 
         normal_db = DBSCAN(eps=angle_radians, min_samples=1, metric='precomputed')
         normal_labels = normal_db.fit_predict(angular_dist)
 
-        final_clusters: List[List[int]] = []
-        
         # Position clustering for each normal cluster
         unique_labels = set(normal_labels)
         unique_labels.discard(-1)
 
+        clusters: List[List[int]] = []
         for normal_label in unique_labels:
             indices = [i for i, lbl in enumerate(normal_labels) if lbl == normal_label]
             pos_subset = self.positions[indices]
@@ -177,9 +196,9 @@ class PointSet:
                 if pos_label == -1:
                     continue
                 cluster_indices = [indices[i] for i, lbl in enumerate(pos_labels) if lbl == pos_label]
-                final_clusters.append(cluster_indices)
+                clusters.append(cluster_indices)
 
-        return final_clusters
+        return clusters
     
     def order_samples_by_cog(self):
         self.samples = sorted(self.samples, key=lambda s: s.radial_distance_to_cog(self.cog))
@@ -228,14 +247,17 @@ class Shape:
     def create_z_maps(self, size: float, z_threshold: float, sampling_rate: int):
         if len(self.samples) == 0:
             return 0
-        z_maps, transformation_matrices = trimesh_z_maps(self.samples.positions, self.samples.normals, size, self.mesh, sampling_rate, z_threshold)
-        self.samples.assign_z_maps(z_maps, transformation_matrices, size, sampling_rate)
+        z_maps, transform_matrices = trimesh_z_maps(self.samples.positions, self.samples.normals, size, self.mesh, sampling_rate, z_threshold)
+        self.samples.assign_z_maps(z_maps, transform_matrices, size, sampling_rate)  
 
     def remove_excessive_torque_samples(self, torque_threshold: float):
         self.samples.remove_excessive_torque_samples(torque_threshold)
 
-    def remove_nonflat_samples(self, threshold: float, radius: float):
-        self.samples.filter_by_flatness(threshold, radius)
+    def remove_nonflat_samples(self, penetration_threshold: float, radius: float):
+        self.samples.filter_nonflat(penetration_threshold, radius)
+
+    def remove_noncovered_footprint(self, coverage_threshold: float, penetration_threshold: float, width: float, height: float):
+        self.samples.filter_noncovered(coverage_threshold, penetration_threshold, width, height)
 
     def get_best_cluster_samples(self) -> PointSet:
         if len(self.samples) == 0:
@@ -282,37 +304,40 @@ class Tools(ABC):
         pass
 
 class SpongeTool(Tools):
-    def __init__(self, name: str, max_width: float, max_height_diff: float, max_torque: float):
+    def __init__(self, name: str, max_width: float, max_height: float, max_penetration: float, max_torque: float, min_coverage: float):
         super().__init__(name)
         self.max_width = max_width
-        self.max_height_diff = max_height_diff
+        self.max_height = max_height
+        self.max_penetration = max_penetration
         self.max_torque = max_torque
+        self.min_coverage = min_coverage
 
     def filter_points(self, shape: Shape) -> PointSet:
         shape.remove_excessive_torque_samples(self.max_torque)
-        shape.create_z_maps(self.max_width * 2 + 1, z_threshold=1e5, sampling_rate=20)
-        shape.remove_nonflat_samples(self.max_height_diff, self.max_width)
-        best_samples = shape.get_best_cluster_samples()
-        return best_samples
+        shape.create_z_maps(np.linalg.norm(np.array([self.max_width, self.max_height])), z_threshold=1e5, sampling_rate=20)
+        shape.remove_noncovered_footprint(self.min_coverage, self.max_penetration, self.max_width, self.max_height)
+        # best_samples = shape.get_best_cluster_samples()
+        return shape.samples
     
     def get_dict(self) -> Dict[str, Any]:
         return {"name": self.name,
                 "type": "sponge",
                 "max_width": self.max_width,
-                "max_height_diff": self.max_height_diff,
-                "max_torque": self.max_torque}
+                "max_penetration": self.max_penetration,
+                "max_torque": self.max_torque,
+                "min_coverage": self.min_coverage}
 
 class SuctionTool(Tools):
-    def __init__(self, name: str, max_width: float, max_height_diff: float, max_torque: float):
+    def __init__(self, name: str, max_width: float, max_penetration: float, max_torque: float):
         super().__init__(name)
         self.max_width = max_width
-        self.max_height_diff = max_height_diff
+        self.max_penetration = max_penetration
         self.max_torque = max_torque
     
     def filter_points(self, shape: Shape) -> PointSet:
         shape.remove_excessive_torque_samples(self.max_torque)
         shape.create_z_maps(self.max_width * 2 + 1, z_threshold=1e5, sampling_rate=20)
-        shape.remove_nonflat_samples(self.max_height_diff, self.max_width)
+        shape.remove_nonflat_samples(self.max_penetration, self.max_width)
         best_samples = shape.get_best_cluster_samples()
         return best_samples
     
@@ -320,7 +345,7 @@ class SuctionTool(Tools):
         return {"name": self.name,
                 "type": "suction",
                 "max_width": self.max_width,
-                "max_height_diff": self.max_height_diff,
+                "max_penetration": self.max_penetration,
                 "max_torque": self.max_torque}
     
 class GripperTool(Tools):
@@ -332,3 +357,19 @@ class GripperTool(Tools):
         self.max_depth = max_depth
         self.max_force = max_force
         self.friction = friction
+
+
+import matplotlib.pyplot as plt
+
+def display_zmap(z_map: NDArray[np.float64], sampling_rate: int, filename: str = "zmap_plot.png"):
+    z_map_2d = z_map.reshape((sampling_rate, sampling_rate))
+    z_masked = np.ma.masked_invalid(z_map_2d)
+    plt.figure(figsize=(6, 5))
+    plt.imshow(z_masked, cmap='plasma', origin='lower')
+    plt.colorbar(label='Z Height')
+    plt.title('Z-Map Heatmap')
+    plt.xlabel('X')
+    plt.ylabel('Y')
+    plt.tight_layout()
+    plt.savefig(filename)  # Save instead of showing
+    print(f"Saved Z-map to {filename}")

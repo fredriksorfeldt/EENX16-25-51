@@ -15,9 +15,8 @@ def get_export_filename(base_name: str = "points", directory: str = "."):
             return filepath
         index += 1
 
-def export_JSON(point_sets: Dict[str, Any], shape: Shape, directory: str = ".", base_filename: str = "points", cad_file_path: str = "unspecified"):
+def export_JSON(point_sets: Dict[str, Any], shape: Shape, directory: str = ".", base_filename: str = "points"):
     export_dict: Dict[str, Any] = {
-        "cad_file_path": cad_file_path, 
         "export_time": time.asctime(),
         "meta": shape.get_dict(),
         "point_sets": point_sets
@@ -55,20 +54,21 @@ def extract_tool_json(data: Dict[str, Any], tool_type: str) -> Tools:
     end_effector = data.get("specification", {}).get("end_effector", {})
     load = data.get("specification", {}).get("max_load", {})
     distances = data.get("specification", {}).get("max_distances", {})
+    min_coverage = data.get("specification", {}).get("min_coverage")
 
     dimensions = end_effector.get("dimensions", {})
     max_torque = load.get("max_torque", 1e12)
     max_height_diff = distances.get("max_height_diff", 0.5)
 
+
     if tool_type == "sponge":
-        max_width = max(dimensions["x"], dimensions["y"])
         if max_torque:
-            return SpongeTool(name, max_width=max_width / 2, max_height_diff=max_height_diff, max_torque=max_torque)
+            return SpongeTool(name, max_width=dimensions["x"], max_height=dimensions["y"], max_penetration=max_height_diff, max_torque=max_torque, min_coverage=min_coverage)
         else:
-            return SpongeTool(name, max_width=max_width / 2, max_height_diff=max_height_diff, max_torque=1e8)
+            return SpongeTool(name, max_width=dimensions["x"], max_height=dimensions["y"], max_penetration=max_height_diff, max_torque=1e8, min_coverage=min_coverage)
     elif tool_type == "suction":
         diameter = dimensions.get("diameter", 0)
         if max_torque:
-            return SuctionTool(name, max_width=diameter / 2, max_height_diff=max_height_diff, max_torque=max_torque)
+            return SuctionTool(name, max_width=diameter / 2, max_penetration=max_height_diff, max_torque=max_torque)
         else:
-            return SuctionTool(name, max_width=diameter / 2, max_height_diff=max_height_diff, max_torque=1e8)
+            return SuctionTool(name, max_width=diameter / 2, max_penetration=max_height_diff, max_torque=1e8)
