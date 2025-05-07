@@ -184,7 +184,7 @@ class Shape:
         ]
         return mass, cog_array, intertia_matrix
 
-    def generate_samples(self, face_points=False) -> Union[PointSet, Dict[TopoDS_Face, PointSet]:
+    def generate_samples(self, face_points=False) -> Union[PointSet, Dict[TopoDS_Face, PointSet]]:
         from .topods_utils import generate_face_point_clouds, filter_points_outside_face, uv_position_to_global
 
         samples = generate_face_point_clouds(self.shape, self.point_distance)
@@ -331,8 +331,6 @@ class GripperTool(Tools):
                 if not points:
                     continue
             
-                valid_points.extend(points)
-                continue
                 surface = BRepAdaptor_Surface(face)
                 if surface.GetType == GeomAbs_Plane:
                     points = filter_distance_from_outer_wire(points, face, self.min_depth, self.max_depth)
@@ -345,7 +343,7 @@ class GripperTool(Tools):
 
                 valid_points.extend(points)
 
-        # valid_points = filter_clustered_points(valid_points, shape.shape, lambda point: gp_Pnt(*point.position).Distance(cog), pi/16)
+        valid_points = filter_clustered_points(valid_points, shape.shape, lambda point: gp_Pnt(*point.position).Distance(cog), pi/16)
 
         print(f"# points: {len(valid_points)}")
         return PointSet(

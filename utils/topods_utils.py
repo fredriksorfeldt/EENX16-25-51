@@ -317,16 +317,16 @@ def filter_gripper_occlution(bredth: float, depth: float, points: List[Tuple[Poi
     valid_points = []
     for point, width in points:
         box1 = BRepPrimAPI_MakeBox(
-            gp_Pnt((-width / 2) - (width_tol * 2), -bredth / 2, depth_tol),
-            gp_Pnt(( width / 2) + (width_tol * 2),  bredth / 2, 1e6)
+            gp_Pnt((-width / 2) - width_tol, (-bredth / 2), depth_tol),
+            gp_Pnt(( width / 2) + width_tol, ( bredth / 2), 1e6)
         ).Shape()
         box2 = BRepPrimAPI_MakeBox(
-            gp_Pnt((-width / 2) -(width_tol * 2) -10, -bredth / 2, -depth), 
-            gp_Pnt((-width / 2) -(width_tol * 2),      bredth / 2, 1e6)
+            gp_Pnt((-width / 2) - width_tol -10, (-bredth / 2), -depth), 
+            gp_Pnt((-width / 2) - width_tol,     ( bredth / 2), 1e6)
         ).Shape()
         box3 = BRepPrimAPI_MakeBox(
-            gp_Pnt(width / 2 + (width_tol * 2),      -bredth / 2, -depth), 
-            gp_Pnt(width / 2 + (width_tol * 2) + 10,  bredth / 2, 1e6)
+            gp_Pnt((width / 2) + width_tol,      (-bredth / 2), -depth), 
+            gp_Pnt((width / 2) + width_tol + 10, ( bredth / 2), 1e6)
         ).Shape()
 
         gripper = TopoDS_Compound()
