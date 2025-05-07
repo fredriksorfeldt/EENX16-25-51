@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Union
 import numpy as np
 import trimesh
 from numpy.typing import NDArray
@@ -184,7 +184,7 @@ class Shape:
         ]
         return mass, cog_array, intertia_matrix
 
-    def generate_samples(self, face_points=False) -> PointSet:
+    def generate_samples(self, face_points=False) -> Union[PointSet, Dict[TopoDS_Face, PointSet]:
         from .topods_utils import generate_face_point_clouds, filter_points_outside_face, uv_position_to_global
 
         samples = generate_face_point_clouds(self.shape, self.point_distance)
@@ -332,7 +332,7 @@ class GripperTool(Tools):
                     continue
             
                 valid_points.extend(points)
-                break
+                continue
                 surface = BRepAdaptor_Surface(face)
                 if surface.GetType == GeomAbs_Plane:
                     points = filter_distance_from_outer_wire(points, face, self.min_depth, self.max_depth)
