@@ -103,11 +103,11 @@ def compute_total_face_area(faces: List[TopoDS_Face]) -> float:
 def filter_large_faces(faces: List[TopoDS_Face], min_area: float = 75) -> List[TopoDS_Face]:
     return [f for f in faces if compute_face_area(f) > min_area]        
 
-def generate_face_point_clouds(shape: TopoDS_Shape, point_distance: float) -> Dict[TopoDS_Face, List[NDArray[np.float64]]]:
+def generate_face_point_clouds(shape: TopoDS_Shape, point_distance: float) ->   Dict[TopoDS_Face, List[NDArray[np.float64]]]:
     faces = list(extract_subshapes(shape, TopAbs_FACE))
     large_faces = filter_large_faces(faces, min_area=10)
 
-    face_point_clouds: Dict[TopoDS_Face, List[tuple[float, float]]] = {}
+    face_point_clouds: Dict[TopoDS_Face, List[NDArray[np.float64]]] = {}
     for face in large_faces:
         face_point_clouds[face] = generate_uniform_points_on_face(face, point_distance)
     
