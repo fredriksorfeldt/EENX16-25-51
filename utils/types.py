@@ -78,6 +78,8 @@ class ZMap:
     
     def is_covered(self, coverage_threshold: float, penetration_threshold: float, patch: NDArray[np.float64]) -> np.bool_:
         peak_value = np.nanmax(patch)
+        if peak_value > penetration_threshold:
+            return False
         difference = np.abs(patch - peak_value)
 
         valid_mask = difference <= penetration_threshold
