@@ -347,3 +347,9 @@ class GripperTool(Tools):
             shape.mass,
         )
 
+    def get_dict(self) -> Dict[str, Any]:
+        return {"name": self.name,
+                "type": "gripper",
+                "max_width": self.max_width,
+                "max_height_diff": self.max_height_diff,
+                "max_torque": self.max_torque}
