@@ -158,6 +158,7 @@ class PointSet:
                     new_sample = copy.deepcopy(s)
                     new_sample.z_map.rotate(angle)
                     new_samples.append(new_sample)
+                    break
         self.samples = new_samples
 
     def remove_excessive_torque_samples(self, torque_threshold: float) -> None:
