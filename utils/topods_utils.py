@@ -372,7 +372,7 @@ def filter_clustered_points(points: List[PointSample], shape: TopoDS_Shape, key:
             if p1 == p2:
                 continue
 
-            if gp_Dir(*p1.normal).Angle(gp_Dir(*p2.normal)) <= angle_tol and (point_face.get(p1).IsEqual(point_face.get(p2)) or gp_Pnt(*p1.position).Distance(gp_Pnt(*p2.position)) <= dist_tol) :
+            if gp_Dir(*p1.normal).Angle(gp_Dir(*p2.normal)) <= angle_tol and gp_Pnt(*p1.position).Distance(gp_Pnt(*p2.position)) <= dist_tol:
                 flag = True
                 break
 
