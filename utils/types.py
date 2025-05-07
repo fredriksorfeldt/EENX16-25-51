@@ -7,8 +7,10 @@ import trimesh
 from numpy.typing import NDArray
 from sklearn.cluster import DBSCAN
 
-from OCC.Core.TopoDS import TopoDS_Shape
+from OCC.Core.TopoDS import TopoDS_Shape, TopoDS_Face
 from OCC.Core.gp import gp_Pnt
+from OCC.Core.BRepAdaptor import BRepAdaptor_Surface
+from OCC.Core.GeomAbs import GeomAbs_Plane
 
 from .geometry_utils import trimesh_z_maps
 
@@ -327,7 +329,9 @@ class GripperTool(Tools):
                 if not points:
                     continue
             
-                points = filter_distance_from_outer_wire(points, face, self.min_depth, self.max_depth)
+                surface = BRepAdaptor_Surface(face)
+                if surface.GetType == GeomAbs_Plane:
+                    points = filter_distance_from_outer_wire(points, face, self.min_depth, self.max_depth)
                 point_pairs = filter_point_pairs(points, shape.shape, pi/32, self.min_width, self.max_width)
 
                 points_widths = filter_closest_orthogonal(point_pairs, shape.shape)

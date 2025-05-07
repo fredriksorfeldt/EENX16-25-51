@@ -14,6 +14,7 @@ from OCC.Core.BRepClass import BRepClass_FaceClassifier
 from OCC.Core.GProp import GProp_GProps
 from OCC.Core.BRepGProp import brepgprop
 from OCC.Core.gp import gp_Pnt, gp_Mat
+from OCC.Core.BRepTool
 
 from typing import List, Any, Dict, Tuple, Optional, Callable
 from numpy.typing import NDArray
