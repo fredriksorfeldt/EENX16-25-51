@@ -4,6 +4,12 @@ cads/
 # Ignore exports directory
 exports/
 
+# Ignore output files
+output*.txt
+
+# Ignore test files
+test*.py
+
 # Ignore Python cache files
 __pycache__/
 *.pyc

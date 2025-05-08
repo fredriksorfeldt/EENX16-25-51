@@ -2,16 +2,16 @@
 import pandas as pd
 
 
-with open('benchmark_log.csv') as file:
+with open('benchmark_20.csv') as file:
     set_data = pd.read_csv(file)
 
-with open('benchmark_log_random.csv') as file:
+with open('benchmark_random_20.csv') as file:
     random_data = pd.read_csv(file)
 
 
 unique_items = random_data['object'].unique()
 
-with open('output.txt', 'w') as output_file:
+with open('output_20.txt', 'w') as output_file:
     for item in unique_items:
 
         extract_set = set_data.loc[set_data['object'] == item]
@@ -38,7 +38,4 @@ with open('output.txt', 'w') as output_file:
         if random_ones != 0: random_rate = random_ones / (random_ones + random_zeros)
         else: random_rate = 0
 
-        output_file.write(f'\nItem name: {item}\n')
-        output_file.write(f'Algorithm success rate: {set_rate}\n')
-        output_file.write(f'Random points success rate: {random_rate}\n')
-        output_file.write(f'Sample sizes: {set_ones + set_zeros} | {random_ones + random_zeros}\n')
+        output_file.write(f'{item} & {set_ones+set_zeros} & {set_rate} & {random_ones + random_zeros} & {random_rate} \n')
