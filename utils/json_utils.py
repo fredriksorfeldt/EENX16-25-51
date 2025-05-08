@@ -15,8 +15,9 @@ def get_export_filename(base_name: str = "points", directory: str = "."):
             return filepath
         index += 1
 
-def export_JSON(point_sets: Dict[str, Any], shape: Shape, directory: str = ".", base_filename: str = "points"):
+def export_JSON(point_sets: Dict[str, Any], shape: Shape, directory: str = ".", base_filename: str = "points", cad_file_path: str = "unspecified"):
     export_dict: Dict[str, Any] = {
+        "cad_file_path": cad_file_path,
         "export_time": time.asctime(),
         "meta": shape.get_dict(),
         "point_sets": point_sets
