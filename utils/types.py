@@ -44,34 +44,8 @@ class ZMap:
 
         return self.data[mask_flat]
     
-    def extract_rectangle_patches(self, width: float, height: float, rotations: int = 4):
-        step_size = self.size / self.sampling_rate
-
-        patch_width_px = int(width / step_size)
-        patch_height_px = int(height / step_size)
-
-        if patch_width_px > self.sampling_rate or patch_height_px > self.sampling_rate:
-            raise ValueError("Patch goes out of bounds")
-        
-        center_y, center_x = self.sampling_rate // 2, self.sampling_rate // 2
-        half_h, half_w = patch_height_px // 2, patch_width_px // 2
-
-        mask = np.zeros((self.sampling_rate, self.sampling_rate), dtype=bool)
-        mask[
-            center_y - half_h:center_y + half_h,
-            center_x - half_w:center_x + half_w
-        ] = True
-        
-        patches, angles = [], []
-        for i in range(rotations):
-            angle = (2 * np.pi / rotations) * i
-            rotated_mask = rotate(mask.astype(float), angle, reshape=False, order=0) > 0.5
-            rotated_mask = np.resize(rotated_mask, self.data.shape)
-            patch = np.where(rotated_mask, self.data, np.nan)
-            patches.append(patch)
-            angles.append(angle)
-
-        return patches, angles
+    def extract_rectangle_patches(self, width: float, height: float):
+        ##### THIS DID NOT WORK #####
     
     def is_flat(self, penetration_threshold: float, patch: NDArray[np.float64]) -> np.bool_:
         return np.all(np.abs(patch) < penetration_threshold)
@@ -360,19 +334,3 @@ class GripperTool(Tools):
         self.max_depth = max_depth
         self.max_force = max_force
         self.friction = friction
-
-
-import matplotlib.pyplot as plt
-
-def display_zmap(z_map: NDArray[np.float64], sampling_rate: int, filename: str = "zmap_plot.png"):
-    z_map_2d = z_map.reshape((sampling_rate, sampling_rate))
-    z_masked = np.ma.masked_invalid(z_map_2d)
-    plt.figure(figsize=(6, 5))
-    plt.imshow(z_masked, cmap='plasma', origin='lower')
-    plt.colorbar(label='Z Height')
-    plt.title('Z-Map Heatmap')
-    plt.xlabel('X')
-    plt.ylabel('Y')
-    plt.tight_layout()
-    plt.savefig(filename)  # Save instead of showing
-    print(f"Saved Z-map to {filename}")

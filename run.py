@@ -35,7 +35,12 @@ def main(file_path: str, tool_folder_path: str):
     # Creating Shape
     shape = Shape(root_shape, mesh, point_distance = 8)
 
-    # Load tools (Suction and sponge)
+    sponge = SpongeTool("random", 10, 20, 3, 1e6, 0.8)
+
+    sponge.filter_points(shape)
+    display_shape(shape)
+
+    """ # Load tools (Suction and sponge)
     tools = import_tools(tool_folder_path)
 
     if not tools:
@@ -49,9 +54,9 @@ def main(file_path: str, tool_folder_path: str):
         shape_copy = copy.deepcopy(shape)
         shapes.append(shape_copy)
         point_set = tool.filter_points(shape_copy)
-        export_dict[f"tool_{i}"] = {"specifications": tool.get_dict(), "points": point_set.get_dict()}
+        export_dict[f"tool_{i}"] = {"specifications": tool.get_dict(), "points": point_set.get_dict()} """
 
-    export_JSON(export_dict, shape, directory="./exports", cad_file_path=args.file_path)
+    # export_JSON(export_dict, shape, directory="./exports", cad_file_path=args.file_path)
 
 if __name__ == "__main__":
     # Set up parsing arguments

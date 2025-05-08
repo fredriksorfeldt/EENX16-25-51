@@ -28,10 +28,10 @@ def display_zmap(z_map: NDArray[np.float64], sampling_rate: int):
     z_map_2d = z_map.reshape((sampling_rate, sampling_rate))
     z_masked = np.ma.masked_invalid(z_map_2d)
     plt.figure(figsize=(6, 5))
-    plt.imshow(z_masked, cmap='plasma', origin='lower')  # or 'viridis', 'inferno', etc.
+    plt.imshow(z_masked, cmap='plasma', origin='lower')
     plt.colorbar(label='Z Height')
     plt.title('Z-Map Heatmap')
     plt.xlabel('X')
     plt.ylabel('Y')
+    plt.tight_layout()
     plt.show()
-
