@@ -1,0 +1,1009 @@
+timestamp,object,grasp_idx,success,failure_code,trial_time_s,vacuum_pa,mu,lift_threshold,diameter,penetration,force
+2025-05-09 11:15:46,1049K22_One-Piece Support-Rail Shaft,0,0,insufficient_vacuum,0.032,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:46,1049K22_One-Piece Support-Rail Shaft,1,0,torque_exceeded_lift,0.015,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:46,1049K22_One-Piece Support-Rail Shaft,2,0,insufficient_vacuum,0.013,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:46,1049K22_One-Piece Support-Rail Shaft,3,0,insufficient_vacuum,0.011,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:46,1049K22_One-Piece Support-Rail Shaft,4,0,insufficient_vacuum,0.011,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:46,1049K22_One-Piece Support-Rail Shaft,5,0,insufficient_vacuum,0.012,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:46,1049K22_One-Piece Support-Rail Shaft,6,0,torque_exceeded_lift,0.015,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:46,1049K22_One-Piece Support-Rail Shaft,7,1,none,0.209,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:46,1049K22_One-Piece Support-Rail Shaft,8,1,none,0.203,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:46,1049K22_One-Piece Support-Rail Shaft,9,0,torque_exceeded_lift,0.020,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:46,1049K22_One-Piece Support-Rail Shaft,10,0,insufficient_vacuum,0.012,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:46,1049K22_One-Piece Support-Rail Shaft,11,0,insufficient_vacuum,0.011,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:46,1049K22_One-Piece Support-Rail Shaft,12,0,insufficient_vacuum,0.012,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:46,1049K22_One-Piece Support-Rail Shaft,13,0,no_initial_contact,0.015,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:46,1049K22_One-Piece Support-Rail Shaft,14,1,none,0.078,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:46,1049K22_One-Piece Support-Rail Shaft,15,0,insufficient_vacuum,0.011,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:46,1049K22_One-Piece Support-Rail Shaft,16,1,none,-0.553,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:46,1049K22_One-Piece Support-Rail Shaft,17,1,none,0.249,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:46,1049K22_One-Piece Support-Rail Shaft,18,0,no_initial_contact,0.014,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:46,1049K22_One-Piece Support-Rail Shaft,19,1,none,0.232,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:47,1049K22_One-Piece Support-Rail Shaft,20,1,none,0.308,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:47,1049K22_One-Piece Support-Rail Shaft,21,0,no_initial_contact,0.017,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:47,1049K22_One-Piece Support-Rail Shaft,22,1,none,0.275,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:47,1049K22_One-Piece Support-Rail Shaft,23,1,none,0.169,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:47,1049K22_One-Piece Support-Rail Shaft,24,1,none,0.268,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:15:48,1049K22_One-Piece Support-Rail Shaft,25,1,none,0.218,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:15:48,1049K22_One-Piece Support-Rail Shaft,26,0,no_initial_contact,0.015,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:15:48,1049K22_One-Piece Support-Rail Shaft,27,0,insufficient_vacuum,0.011,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:15:48,1049K22_One-Piece Support-Rail Shaft,28,1,none,0.681,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:15:49,1049K22_One-Piece Support-Rail Shaft,29,1,none,0.592,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:15:49,1049K22_One-Piece Support-Rail Shaft,30,1,none,0.127,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:15:49,1049K22_One-Piece Support-Rail Shaft,31,1,none,0.123,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:15:49,1049K22_One-Piece Support-Rail Shaft,32,1,none,0.211,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:15:50,1049K22_One-Piece Support-Rail Shaft,33,1,none,0.211,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:15:50,1049K22_One-Piece Support-Rail Shaft,34,0,insufficient_vacuum,0.012,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:15:50,1049K22_One-Piece Support-Rail Shaft,35,1,none,0.349,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:15:50,1049K22_One-Piece Support-Rail Shaft,36,0,insufficient_vacuum,0.012,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:50,1049K22_One-Piece Support-Rail Shaft,37,0,torque_exceeded_lift,0.015,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:50,1049K22_One-Piece Support-Rail Shaft,38,0,insufficient_vacuum,0.011,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:50,1049K22_One-Piece Support-Rail Shaft,39,0,insufficient_vacuum,0.012,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:50,1049K22_One-Piece Support-Rail Shaft,40,0,torque_exceeded_lift,0.017,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:50,1049K22_One-Piece Support-Rail Shaft,41,0,insufficient_vacuum,0.012,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:50,1049K22_One-Piece Support-Rail Shaft,42,0,insufficient_vacuum,0.012,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:50,1049K22_One-Piece Support-Rail Shaft,43,1,none,0.238,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:51,1049K22_One-Piece Support-Rail Shaft,44,1,none,0.214,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:51,1049K22_One-Piece Support-Rail Shaft,45,0,insufficient_vacuum,0.011,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:51,1049K22_One-Piece Support-Rail Shaft,46,0,torque_exceeded_lift,0.027,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:51,1049K22_One-Piece Support-Rail Shaft,47,1,none,0.276,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:51,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,0,0,insufficient_vacuum,0.170,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:51,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,1,0,insufficient_vacuum,0.080,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:52,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,2,0,insufficient_vacuum,0.080,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:52,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,3,0,insufficient_vacuum,0.081,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:52,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,4,1,none,0.364,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:52,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,5,0,insufficient_vacuum,0.090,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:52,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,6,0,insufficient_vacuum,0.080,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:52,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,7,0,insufficient_vacuum,0.077,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:52,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,8,0,insufficient_vacuum,0.078,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:53,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,9,1,none,0.275,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:53,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,10,0,insufficient_vacuum,0.084,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:53,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,11,0,insufficient_vacuum,0.079,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:53,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,12,0,insufficient_vacuum,0.079,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:53,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,13,0,insufficient_vacuum,0.075,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:53,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,14,0,insufficient_vacuum,0.073,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:53,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,15,0,insufficient_vacuum,0.074,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:54,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,16,1,none,0.631,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:54,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,17,0,insufficient_vacuum,0.073,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:54,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,18,0,insufficient_vacuum,0.072,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:54,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,19,1,none,0.231,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:54,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,20,0,insufficient_vacuum,0.078,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:54,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,21,0,no_initial_contact,0.089,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:54,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,22,0,insufficient_vacuum,0.076,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:54,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,23,0,insufficient_vacuum,0.072,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:54,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,24,0,insufficient_vacuum,0.075,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:15:55,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,25,0,insufficient_vacuum,0.074,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:15:55,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,26,1,none,0.249,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:15:55,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,27,0,insufficient_vacuum,0.075,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:15:55,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,28,1,none,0.567,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:15:55,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,29,0,insufficient_vacuum,0.074,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:15:56,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,30,0,insufficient_vacuum,0.076,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:15:56,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,31,0,insufficient_vacuum,0.083,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:15:56,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,32,0,insufficient_vacuum,0.085,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:15:56,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,33,1,none,0.629,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:15:56,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,34,0,insufficient_vacuum,0.088,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:15:57,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,35,0,insufficient_vacuum,0.077,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:15:57,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,36,0,insufficient_vacuum,0.076,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:57,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,37,0,insufficient_vacuum,0.077,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:57,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,38,1,none,0.585,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:57,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,39,0,insufficient_vacuum,0.079,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:57,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,40,0,no_initial_contact,0.085,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:57,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,41,0,insufficient_vacuum,0.081,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:58,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,42,0,insufficient_vacuum,0.077,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:58,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,43,0,insufficient_vacuum,0.077,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:58,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,44,0,insufficient_vacuum,0.077,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:58,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,45,1,none,0.517,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:58,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,46,0,insufficient_vacuum,0.076,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:58,1865K104_Aluminum Easy-Access Base-Mounted Shaft Support,47,0,insufficient_vacuum,0.075,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,0,0,insufficient_vacuum,0.020,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,1,0,no_initial_contact,0.026,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,2,0,insufficient_vacuum,0.021,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,3,0,insufficient_vacuum,0.019,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,4,0,insufficient_vacuum,0.020,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,5,0,insufficient_vacuum,0.021,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,6,0,insufficient_vacuum,0.021,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,7,0,insufficient_vacuum,0.023,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,8,0,insufficient_vacuum,0.022,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,9,0,insufficient_vacuum,0.022,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,10,0,insufficient_vacuum,0.022,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,11,0,insufficient_vacuum,0.023,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,12,0,insufficient_vacuum,0.022,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,13,0,insufficient_vacuum,0.021,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,14,0,insufficient_vacuum,0.023,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,15,0,torque_exceeded_lift,0.029,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,16,0,insufficient_vacuum,0.024,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,17,0,insufficient_vacuum,0.024,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,18,0,torque_exceeded_lift,0.029,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,19,0,torque_exceeded_lift,0.028,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,20,0,insufficient_vacuum,0.023,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,21,0,insufficient_vacuum,0.022,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,22,0,torque_exceeded_lift,0.027,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,23,0,insufficient_vacuum,0.020,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,24,0,insufficient_vacuum,0.020,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,25,0,insufficient_vacuum,0.021,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,26,0,insufficient_vacuum,0.022,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:16:00,2245A101_Granite Flat-Surface Plate,27,0,insufficient_vacuum,0.021,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:16:00,2245A101_Granite Flat-Surface Plate,28,0,insufficient_vacuum,0.023,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:16:00,2245A101_Granite Flat-Surface Plate,29,0,insufficient_vacuum,0.021,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:16:00,2245A101_Granite Flat-Surface Plate,30,0,insufficient_vacuum,0.022,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:16:00,2245A101_Granite Flat-Surface Plate,31,1,none,0.175,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:16:00,2245A101_Granite Flat-Surface Plate,32,0,insufficient_vacuum,0.020,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:16:00,2245A101_Granite Flat-Surface Plate,33,0,insufficient_vacuum,0.020,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:16:00,2245A101_Granite Flat-Surface Plate,34,0,insufficient_vacuum,0.020,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:16:00,2245A101_Granite Flat-Surface Plate,35,0,insufficient_vacuum,0.020,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:16:00,2245A101_Granite Flat-Surface Plate,36,0,torque_exceeded_lift,0.022,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:00,2245A101_Granite Flat-Surface Plate,37,0,insufficient_vacuum,0.019,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:00,2245A101_Granite Flat-Surface Plate,38,0,insufficient_vacuum,0.019,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:00,2245A101_Granite Flat-Surface Plate,39,0,insufficient_vacuum,0.019,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:00,2245A101_Granite Flat-Surface Plate,40,0,insufficient_vacuum,0.020,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:00,2245A101_Granite Flat-Surface Plate,41,0,insufficient_vacuum,0.020,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:00,2245A101_Granite Flat-Surface Plate,42,0,insufficient_vacuum,0.023,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:00,2245A101_Granite Flat-Surface Plate,43,0,insufficient_vacuum,0.022,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:00,2245A101_Granite Flat-Surface Plate,44,0,insufficient_vacuum,0.021,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:00,2245A101_Granite Flat-Surface Plate,45,0,insufficient_vacuum,0.021,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:00,2245A101_Granite Flat-Surface Plate,46,0,insufficient_vacuum,0.021,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:00,2245A101_Granite Flat-Surface Plate,47,0,insufficient_vacuum,0.020,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:33,2361A62_V-Block,0,0,insufficient_vacuum,0.537,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:34,2361A62_V-Block,1,0,torque_exceeded_lift,0.527,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:34,2361A62_V-Block,2,0,torque_exceeded_lift,0.542,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:35,2361A62_V-Block,3,0,insufficient_vacuum,0.571,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:35,2361A62_V-Block,4,0,torque_exceeded_lift,0.548,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:36,2361A62_V-Block,5,0,insufficient_vacuum,0.595,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:36,2361A62_V-Block,6,0,insufficient_vacuum,0.525,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:37,2361A62_V-Block,7,0,insufficient_vacuum,0.550,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:37,2361A62_V-Block,8,0,insufficient_vacuum,0.515,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:38,2361A62_V-Block,9,0,insufficient_vacuum,0.548,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:39,2361A62_V-Block,10,1,none,0.616,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:39,2361A62_V-Block,11,0,insufficient_vacuum,0.513,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:40,2361A62_V-Block,12,0,insufficient_vacuum,0.506,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:16:40,2361A62_V-Block,13,0,insufficient_vacuum,0.523,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:16:41,2361A62_V-Block,14,0,torque_exceeded_lift,0.558,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:16:41,2361A62_V-Block,15,0,torque_exceeded_lift,0.521,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:16:42,2361A62_V-Block,16,0,torque_exceeded_lift,0.536,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:16:42,2361A62_V-Block,17,0,torque_exceeded_lift,0.577,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:16:43,2361A62_V-Block,18,0,insufficient_vacuum,0.556,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:16:43,2361A62_V-Block,19,0,insufficient_vacuum,0.510,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:16:44,2361A62_V-Block,20,1,none,0.792,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:16:45,2361A62_V-Block,21,0,insufficient_vacuum,0.597,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:16:45,2361A62_V-Block,22,0,insufficient_vacuum,0.569,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:16:46,2361A62_V-Block,23,1,none,0.617,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:16:47,2361A62_V-Block,24,0,insufficient_vacuum,0.539,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:16:47,2361A62_V-Block,25,1,none,0.695,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:16:48,2361A62_V-Block,26,1,none,0.729,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:16:49,2361A62_V-Block,27,1,none,0.882,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:16:49,2361A62_V-Block,28,0,insufficient_vacuum,-0.199,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:16:49,2361A62_V-Block,29,0,insufficient_vacuum,0.554,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:16:50,2361A62_V-Block,30,1,none,0.787,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:16:51,2361A62_V-Block,31,0,insufficient_vacuum,0.530,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:16:51,2361A62_V-Block,32,1,none,0.565,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:16:52,2361A62_V-Block,33,0,insufficient_vacuum,0.509,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:16:52,2361A62_V-Block,34,0,insufficient_vacuum,0.530,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:16:53,2361A62_V-Block,35,1,none,0.610,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:16:53,2361A62_V-Block,36,0,insufficient_vacuum,0.531,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:54,2361A62_V-Block,37,0,insufficient_vacuum,0.591,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:54,2361A62_V-Block,38,0,insufficient_vacuum,0.528,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:55,2361A62_V-Block,39,0,insufficient_vacuum,0.600,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:56,2361A62_V-Block,40,0,insufficient_vacuum,0.545,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:56,2361A62_V-Block,41,0,insufficient_vacuum,0.521,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:57,2361A62_V-Block,42,0,torque_exceeded_lift,0.538,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:57,2361A62_V-Block,43,0,insufficient_vacuum,0.544,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:58,2361A62_V-Block,44,0,insufficient_vacuum,0.533,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:58,2361A62_V-Block,45,0,insufficient_vacuum,0.596,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:59,2361A62_V-Block,46,0,insufficient_vacuum,0.544,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:59,2361A62_V-Block,47,0,torque_exceeded_lift,0.600,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:00,4063N13_Base-Mounted Dual Shaft Support,0,1,none,0.185,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:00,4063N13_Base-Mounted Dual Shaft Support,1,0,insufficient_vacuum,0.018,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:00,4063N13_Base-Mounted Dual Shaft Support,2,0,insufficient_vacuum,0.020,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:00,4063N13_Base-Mounted Dual Shaft Support,3,0,insufficient_vacuum,0.013,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:00,4063N13_Base-Mounted Dual Shaft Support,4,0,insufficient_vacuum,0.013,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:00,4063N13_Base-Mounted Dual Shaft Support,5,0,insufficient_vacuum,0.015,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:00,4063N13_Base-Mounted Dual Shaft Support,6,0,insufficient_vacuum,0.023,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:00,4063N13_Base-Mounted Dual Shaft Support,7,0,insufficient_vacuum,0.041,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:00,4063N13_Base-Mounted Dual Shaft Support,8,0,insufficient_vacuum,0.034,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:00,4063N13_Base-Mounted Dual Shaft Support,9,0,insufficient_vacuum,0.041,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:00,4063N13_Base-Mounted Dual Shaft Support,10,0,insufficient_vacuum,0.022,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:00,4063N13_Base-Mounted Dual Shaft Support,11,0,insufficient_vacuum,0.037,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:01,4063N13_Base-Mounted Dual Shaft Support,12,1,none,0.669,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:01,4063N13_Base-Mounted Dual Shaft Support,13,1,none,0.040,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:01,4063N13_Base-Mounted Dual Shaft Support,14,0,insufficient_vacuum,0.013,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:01,4063N13_Base-Mounted Dual Shaft Support,15,0,insufficient_vacuum,0.015,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:01,4063N13_Base-Mounted Dual Shaft Support,16,0,insufficient_vacuum,0.016,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:01,4063N13_Base-Mounted Dual Shaft Support,17,0,insufficient_vacuum,0.014,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:01,4063N13_Base-Mounted Dual Shaft Support,18,0,insufficient_vacuum,0.013,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:01,4063N13_Base-Mounted Dual Shaft Support,19,1,none,0.286,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:01,4063N13_Base-Mounted Dual Shaft Support,20,0,insufficient_vacuum,0.012,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:02,4063N13_Base-Mounted Dual Shaft Support,21,1,none,0.524,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:02,4063N13_Base-Mounted Dual Shaft Support,22,0,insufficient_vacuum,0.013,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:02,4063N13_Base-Mounted Dual Shaft Support,23,0,insufficient_vacuum,0.013,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:03,4063N13_Base-Mounted Dual Shaft Support,24,1,none,0.694,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:03,4063N13_Base-Mounted Dual Shaft Support,25,0,insufficient_vacuum,0.014,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:03,4063N13_Base-Mounted Dual Shaft Support,26,0,insufficient_vacuum,0.013,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:03,4063N13_Base-Mounted Dual Shaft Support,27,0,insufficient_vacuum,0.013,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:03,4063N13_Base-Mounted Dual Shaft Support,28,0,insufficient_vacuum,0.013,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:03,4063N13_Base-Mounted Dual Shaft Support,29,0,insufficient_vacuum,0.013,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:03,4063N13_Base-Mounted Dual Shaft Support,30,0,insufficient_vacuum,0.015,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:03,4063N13_Base-Mounted Dual Shaft Support,31,0,insufficient_vacuum,0.016,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:03,4063N13_Base-Mounted Dual Shaft Support,32,1,none,0.413,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:03,4063N13_Base-Mounted Dual Shaft Support,33,0,insufficient_vacuum,0.012,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:03,4063N13_Base-Mounted Dual Shaft Support,34,0,insufficient_vacuum,0.014,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:03,4063N13_Base-Mounted Dual Shaft Support,35,0,insufficient_vacuum,0.014,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:04,4063N13_Base-Mounted Dual Shaft Support,36,1,none,0.517,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:04,4063N13_Base-Mounted Dual Shaft Support,37,0,no_initial_contact,0.014,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:04,4063N13_Base-Mounted Dual Shaft Support,38,0,insufficient_vacuum,0.013,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:04,4063N13_Base-Mounted Dual Shaft Support,39,0,insufficient_vacuum,0.014,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:04,4063N13_Base-Mounted Dual Shaft Support,40,0,insufficient_vacuum,0.014,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:04,4063N13_Base-Mounted Dual Shaft Support,41,0,insufficient_vacuum,0.012,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:04,4063N13_Base-Mounted Dual Shaft Support,42,0,insufficient_vacuum,0.013,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:04,4063N13_Base-Mounted Dual Shaft Support,43,0,insufficient_vacuum,0.012,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:04,4063N13_Base-Mounted Dual Shaft Support,44,0,insufficient_vacuum,0.012,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:04,4063N13_Base-Mounted Dual Shaft Support,45,0,insufficient_vacuum,0.012,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:04,4063N13_Base-Mounted Dual Shaft Support,46,0,insufficient_vacuum,0.012,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:04,4063N13_Base-Mounted Dual Shaft Support,47,0,insufficient_vacuum,0.013,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:06,6058N58_303 Stainless Steel Set Screw Shaft Collar,0,0,torque_exceeded_lift,0.123,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:06,6058N58_303 Stainless Steel Set Screw Shaft Collar,1,0,torque_exceeded_lift,0.064,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:06,6058N58_303 Stainless Steel Set Screw Shaft Collar,2,0,insufficient_vacuum,0.057,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:06,6058N58_303 Stainless Steel Set Screw Shaft Collar,3,0,insufficient_vacuum,0.059,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:06,6058N58_303 Stainless Steel Set Screw Shaft Collar,4,0,insufficient_vacuum,0.063,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:06,6058N58_303 Stainless Steel Set Screw Shaft Collar,5,0,insufficient_vacuum,0.059,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:06,6058N58_303 Stainless Steel Set Screw Shaft Collar,6,0,insufficient_vacuum,0.057,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:06,6058N58_303 Stainless Steel Set Screw Shaft Collar,7,0,insufficient_vacuum,0.056,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:06,6058N58_303 Stainless Steel Set Screw Shaft Collar,8,0,insufficient_vacuum,0.069,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:06,6058N58_303 Stainless Steel Set Screw Shaft Collar,9,0,insufficient_vacuum,0.060,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:06,6058N58_303 Stainless Steel Set Screw Shaft Collar,10,0,insufficient_vacuum,0.059,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:07,6058N58_303 Stainless Steel Set Screw Shaft Collar,11,0,insufficient_vacuum,0.056,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:07,6058N58_303 Stainless Steel Set Screw Shaft Collar,12,0,insufficient_vacuum,0.057,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:07,6058N58_303 Stainless Steel Set Screw Shaft Collar,13,1,none,0.422,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:07,6058N58_303 Stainless Steel Set Screw Shaft Collar,14,0,insufficient_vacuum,0.066,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:07,6058N58_303 Stainless Steel Set Screw Shaft Collar,15,0,insufficient_vacuum,0.061,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:07,6058N58_303 Stainless Steel Set Screw Shaft Collar,16,0,insufficient_vacuum,0.058,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:07,6058N58_303 Stainless Steel Set Screw Shaft Collar,17,0,insufficient_vacuum,0.057,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:07,6058N58_303 Stainless Steel Set Screw Shaft Collar,18,1,none,0.147,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:07,6058N58_303 Stainless Steel Set Screw Shaft Collar,19,0,insufficient_vacuum,0.061,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:08,6058N58_303 Stainless Steel Set Screw Shaft Collar,20,0,insufficient_vacuum,0.056,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:08,6058N58_303 Stainless Steel Set Screw Shaft Collar,21,1,none,0.114,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:08,6058N58_303 Stainless Steel Set Screw Shaft Collar,22,0,insufficient_vacuum,0.061,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:08,6058N58_303 Stainless Steel Set Screw Shaft Collar,23,0,insufficient_vacuum,0.067,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:08,6058N58_303 Stainless Steel Set Screw Shaft Collar,24,1,none,0.112,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:08,6058N58_303 Stainless Steel Set Screw Shaft Collar,25,1,none,0.498,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:09,6058N58_303 Stainless Steel Set Screw Shaft Collar,26,1,none,0.306,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:09,6058N58_303 Stainless Steel Set Screw Shaft Collar,27,0,insufficient_vacuum,0.064,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:09,6058N58_303 Stainless Steel Set Screw Shaft Collar,28,0,insufficient_vacuum,0.062,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:09,6058N58_303 Stainless Steel Set Screw Shaft Collar,29,0,insufficient_vacuum,0.063,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:09,6058N58_303 Stainless Steel Set Screw Shaft Collar,30,1,none,0.166,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:09,6058N58_303 Stainless Steel Set Screw Shaft Collar,31,0,insufficient_vacuum,0.062,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:09,6058N58_303 Stainless Steel Set Screw Shaft Collar,32,0,insufficient_vacuum,0.062,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:10,6058N58_303 Stainless Steel Set Screw Shaft Collar,33,1,none,0.456,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:10,6058N58_303 Stainless Steel Set Screw Shaft Collar,34,0,insufficient_vacuum,0.056,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:10,6058N58_303 Stainless Steel Set Screw Shaft Collar,35,1,none,0.467,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:10,6058N58_303 Stainless Steel Set Screw Shaft Collar,36,0,insufficient_vacuum,0.058,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:10,6058N58_303 Stainless Steel Set Screw Shaft Collar,37,0,insufficient_vacuum,0.057,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:10,6058N58_303 Stainless Steel Set Screw Shaft Collar,38,0,insufficient_vacuum,0.055,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:11,6058N58_303 Stainless Steel Set Screw Shaft Collar,39,1,none,0.224,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:11,6058N58_303 Stainless Steel Set Screw Shaft Collar,40,0,insufficient_vacuum,0.058,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:11,6058N58_303 Stainless Steel Set Screw Shaft Collar,41,0,insufficient_vacuum,0.059,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:11,6058N58_303 Stainless Steel Set Screw Shaft Collar,42,0,insufficient_vacuum,0.061,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:11,6058N58_303 Stainless Steel Set Screw Shaft Collar,43,1,none,0.095,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:11,6058N58_303 Stainless Steel Set Screw Shaft Collar,44,0,insufficient_vacuum,0.058,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:11,6058N58_303 Stainless Steel Set Screw Shaft Collar,45,0,insufficient_vacuum,0.056,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:11,6058N58_303 Stainless Steel Set Screw Shaft Collar,46,0,insufficient_vacuum,0.056,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:11,6058N58_303 Stainless Steel Set Screw Shaft Collar,47,0,insufficient_vacuum,0.056,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:18,6109K207_Extra-Wide Sleeve Bearing Carriage,0,1,none,0.756,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:18,6109K207_Extra-Wide Sleeve Bearing Carriage,1,0,insufficient_vacuum,0.201,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:18,6109K207_Extra-Wide Sleeve Bearing Carriage,2,0,insufficient_vacuum,0.156,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:19,6109K207_Extra-Wide Sleeve Bearing Carriage,3,0,insufficient_vacuum,0.268,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:19,6109K207_Extra-Wide Sleeve Bearing Carriage,4,0,insufficient_vacuum,0.172,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:19,6109K207_Extra-Wide Sleeve Bearing Carriage,5,0,insufficient_vacuum,0.165,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:20,6109K207_Extra-Wide Sleeve Bearing Carriage,6,1,none,0.735,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:20,6109K207_Extra-Wide Sleeve Bearing Carriage,7,0,torque_exceeded_lift,0.162,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:20,6109K207_Extra-Wide Sleeve Bearing Carriage,8,1,none,0.224,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:20,6109K207_Extra-Wide Sleeve Bearing Carriage,9,0,insufficient_vacuum,0.151,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:21,6109K207_Extra-Wide Sleeve Bearing Carriage,10,1,none,0.386,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:21,6109K207_Extra-Wide Sleeve Bearing Carriage,11,0,insufficient_vacuum,0.228,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:21,6109K207_Extra-Wide Sleeve Bearing Carriage,12,1,none,0.011,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:21,6109K207_Extra-Wide Sleeve Bearing Carriage,13,1,none,0.510,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:21,6109K207_Extra-Wide Sleeve Bearing Carriage,14,0,insufficient_vacuum,0.183,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:22,6109K207_Extra-Wide Sleeve Bearing Carriage,15,0,insufficient_vacuum,0.193,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:22,6109K207_Extra-Wide Sleeve Bearing Carriage,16,1,none,0.417,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:22,6109K207_Extra-Wide Sleeve Bearing Carriage,17,0,insufficient_vacuum,0.146,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:23,6109K207_Extra-Wide Sleeve Bearing Carriage,18,1,none,0.713,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:24,6109K207_Extra-Wide Sleeve Bearing Carriage,19,1,none,0.738,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:24,6109K207_Extra-Wide Sleeve Bearing Carriage,20,1,none,0.351,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:24,6109K207_Extra-Wide Sleeve Bearing Carriage,21,0,insufficient_vacuum,0.188,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:25,6109K207_Extra-Wide Sleeve Bearing Carriage,22,1,none,0.539,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:25,6109K207_Extra-Wide Sleeve Bearing Carriage,23,1,none,0.213,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:25,6109K207_Extra-Wide Sleeve Bearing Carriage,24,1,none,0.551,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:26,6109K207_Extra-Wide Sleeve Bearing Carriage,25,1,none,0.727,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:27,6109K207_Extra-Wide Sleeve Bearing Carriage,26,1,none,0.379,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:27,6109K207_Extra-Wide Sleeve Bearing Carriage,27,0,insufficient_vacuum,0.153,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:27,6109K207_Extra-Wide Sleeve Bearing Carriage,28,1,none,0.404,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:28,6109K207_Extra-Wide Sleeve Bearing Carriage,29,1,none,0.444,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:28,6109K207_Extra-Wide Sleeve Bearing Carriage,30,1,none,0.728,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:29,6109K207_Extra-Wide Sleeve Bearing Carriage,31,1,none,0.420,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:29,6109K207_Extra-Wide Sleeve Bearing Carriage,32,1,none,0.509,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:30,6109K207_Extra-Wide Sleeve Bearing Carriage,33,1,none,0.361,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:30,6109K207_Extra-Wide Sleeve Bearing Carriage,34,1,none,0.368,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:30,6109K207_Extra-Wide Sleeve Bearing Carriage,35,1,none,0.354,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:31,6109K207_Extra-Wide Sleeve Bearing Carriage,36,1,none,0.424,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:31,6109K207_Extra-Wide Sleeve Bearing Carriage,37,1,none,0.232,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:31,6109K207_Extra-Wide Sleeve Bearing Carriage,38,0,insufficient_vacuum,0.158,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:32,6109K207_Extra-Wide Sleeve Bearing Carriage,39,1,none,0.422,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:32,6109K207_Extra-Wide Sleeve Bearing Carriage,40,0,insufficient_vacuum,0.153,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:32,6109K207_Extra-Wide Sleeve Bearing Carriage,41,0,torque_exceeded_lift,0.274,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:32,6109K207_Extra-Wide Sleeve Bearing Carriage,42,0,insufficient_vacuum,0.221,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:32,6109K207_Extra-Wide Sleeve Bearing Carriage,43,0,torque_exceeded_lift,0.158,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:33,6109K207_Extra-Wide Sleeve Bearing Carriage,44,1,none,0.290,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:33,6109K207_Extra-Wide Sleeve Bearing Carriage,45,0,torque_exceeded_lift,0.157,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:33,6109K207_Extra-Wide Sleeve Bearing Carriage,46,0,torque_exceeded_lift,0.175,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:33,6109K207_Extra-Wide Sleeve Bearing Carriage,47,0,insufficient_vacuum,0.157,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:34,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,0,0,insufficient_vacuum,0.143,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:35,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,1,0,insufficient_vacuum,0.057,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:35,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,2,0,insufficient_vacuum,0.058,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:35,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,3,1,none,0.600,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:35,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,4,0,insufficient_vacuum,0.055,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:35,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,5,0,insufficient_vacuum,0.051,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:35,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,6,0,insufficient_vacuum,0.051,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:35,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,7,0,insufficient_vacuum,0.053,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:36,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,8,1,none,0.499,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:36,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,9,0,insufficient_vacuum,0.054,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:36,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,10,0,insufficient_vacuum,0.058,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:36,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,11,0,insufficient_vacuum,0.058,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:36,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,12,0,insufficient_vacuum,0.058,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:36,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,13,0,insufficient_vacuum,0.055,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:36,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,14,0,insufficient_vacuum,0.055,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:37,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,15,1,none,0.567,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:37,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,16,0,insufficient_vacuum,0.053,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:37,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,17,0,insufficient_vacuum,0.055,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:37,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,18,0,insufficient_vacuum,0.054,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:37,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,19,0,insufficient_vacuum,0.054,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:37,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,20,0,insufficient_vacuum,0.054,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:37,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,21,0,insufficient_vacuum,0.053,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:37,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,22,0,insufficient_vacuum,0.052,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:37,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,23,0,insufficient_vacuum,0.050,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:37,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,24,0,insufficient_vacuum,0.051,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:37,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,25,0,insufficient_vacuum,0.052,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:37,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,26,0,insufficient_vacuum,0.054,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:37,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,27,0,insufficient_vacuum,0.053,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:37,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,28,0,insufficient_vacuum,0.052,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:38,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,29,0,insufficient_vacuum,0.052,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:38,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,30,0,insufficient_vacuum,0.052,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:38,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,31,0,insufficient_vacuum,0.053,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:38,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,32,0,insufficient_vacuum,0.056,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:38,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,33,0,insufficient_vacuum,0.058,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:38,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,34,0,insufficient_vacuum,0.053,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:38,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,35,0,insufficient_vacuum,0.050,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:38,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,36,0,insufficient_vacuum,0.055,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:38,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,37,0,insufficient_vacuum,0.054,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:38,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,38,0,insufficient_vacuum,0.057,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,39,1,none,0.626,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,40,0,insufficient_vacuum,0.052,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,41,0,insufficient_vacuum,0.053,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,42,0,insufficient_vacuum,0.065,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,43,0,insufficient_vacuum,0.051,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,44,0,insufficient_vacuum,0.053,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,45,0,insufficient_vacuum,0.054,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,46,0,insufficient_vacuum,0.053,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6109K271_Pillow Block for 73mm and 107mm Wide Aluminum Carriage,47,0,insufficient_vacuum,0.054,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,0,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,1,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,2,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,3,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,4,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,5,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,6,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,7,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,8,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,9,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,10,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,11,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,12,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,13,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,14,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,15,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,16,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,17,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,18,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,19,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,20,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,21,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,22,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,23,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,24,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,25,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,26,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,27,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,28,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,29,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,30,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,31,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,32,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,33,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,34,0,torque_exceeded_lift,0.006,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,35,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,36,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,37,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,38,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,39,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,40,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,41,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,42,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,43,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,44,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,45,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,46,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,47,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:44,6504N29_Sprocket for Silent Drive Chain,0,0,insufficient_vacuum,0.166,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:44,6504N29_Sprocket for Silent Drive Chain,1,0,torque_exceeded_lift,0.163,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:44,6504N29_Sprocket for Silent Drive Chain,2,0,insufficient_vacuum,0.149,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:44,6504N29_Sprocket for Silent Drive Chain,3,0,no_initial_contact,0.148,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:44,6504N29_Sprocket for Silent Drive Chain,4,0,torque_exceeded_lift,0.168,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:44,6504N29_Sprocket for Silent Drive Chain,5,0,insufficient_vacuum,0.146,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:44,6504N29_Sprocket for Silent Drive Chain,6,0,insufficient_vacuum,0.168,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:45,6504N29_Sprocket for Silent Drive Chain,7,0,insufficient_vacuum,0.176,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:45,6504N29_Sprocket for Silent Drive Chain,8,0,insufficient_vacuum,0.176,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:45,6504N29_Sprocket for Silent Drive Chain,9,0,insufficient_vacuum,0.222,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:45,6504N29_Sprocket for Silent Drive Chain,10,0,insufficient_vacuum,0.163,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:45,6504N29_Sprocket for Silent Drive Chain,11,0,insufficient_vacuum,0.165,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:46,6504N29_Sprocket for Silent Drive Chain,12,0,insufficient_vacuum,0.142,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:46,6504N29_Sprocket for Silent Drive Chain,13,1,none,0.632,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:46,6504N29_Sprocket for Silent Drive Chain,14,0,insufficient_vacuum,0.148,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:46,6504N29_Sprocket for Silent Drive Chain,15,0,no_initial_contact,0.145,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:47,6504N29_Sprocket for Silent Drive Chain,16,0,insufficient_vacuum,0.150,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:47,6504N29_Sprocket for Silent Drive Chain,17,0,insufficient_vacuum,0.146,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:47,6504N29_Sprocket for Silent Drive Chain,18,0,insufficient_vacuum,0.148,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:47,6504N29_Sprocket for Silent Drive Chain,19,0,insufficient_vacuum,0.142,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:47,6504N29_Sprocket for Silent Drive Chain,20,0,insufficient_vacuum,0.141,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:47,6504N29_Sprocket for Silent Drive Chain,21,0,insufficient_vacuum,0.147,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:47,6504N29_Sprocket for Silent Drive Chain,22,0,insufficient_vacuum,0.138,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:48,6504N29_Sprocket for Silent Drive Chain,23,0,insufficient_vacuum,0.144,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:48,6504N29_Sprocket for Silent Drive Chain,24,0,insufficient_vacuum,0.149,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:49,6504N29_Sprocket for Silent Drive Chain,25,1,none,0.827,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:49,6504N29_Sprocket for Silent Drive Chain,26,0,insufficient_vacuum,0.149,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:49,6504N29_Sprocket for Silent Drive Chain,27,1,none,0.358,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:50,6504N29_Sprocket for Silent Drive Chain,28,1,none,0.756,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:50,6504N29_Sprocket for Silent Drive Chain,29,1,none,0.519,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:51,6504N29_Sprocket for Silent Drive Chain,30,0,no_initial_contact,0.156,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:51,6504N29_Sprocket for Silent Drive Chain,31,1,none,0.265,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:51,6504N29_Sprocket for Silent Drive Chain,32,0,insufficient_vacuum,0.154,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:51,6504N29_Sprocket for Silent Drive Chain,33,0,insufficient_vacuum,0.156,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:51,6504N29_Sprocket for Silent Drive Chain,34,1,none,0.276,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:52,6504N29_Sprocket for Silent Drive Chain,35,0,insufficient_vacuum,0.167,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:52,6504N29_Sprocket for Silent Drive Chain,36,0,insufficient_vacuum,0.164,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:52,6504N29_Sprocket for Silent Drive Chain,37,0,torque_exceeded_lift,0.177,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:52,6504N29_Sprocket for Silent Drive Chain,38,0,insufficient_vacuum,0.150,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:52,6504N29_Sprocket for Silent Drive Chain,39,0,no_initial_contact,0.152,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:52,6504N29_Sprocket for Silent Drive Chain,40,0,torque_exceeded_lift,-0.636,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:52,6504N29_Sprocket for Silent Drive Chain,41,0,insufficient_vacuum,0.149,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:52,6504N29_Sprocket for Silent Drive Chain,42,0,insufficient_vacuum,0.144,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:52,6504N29_Sprocket for Silent Drive Chain,43,0,torque_exceeded_lift,0.160,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:52,6504N29_Sprocket for Silent Drive Chain,44,0,insufficient_vacuum,0.162,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:52,6504N29_Sprocket for Silent Drive Chain,45,0,insufficient_vacuum,0.152,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:52,6504N29_Sprocket for Silent Drive Chain,46,0,insufficient_vacuum,0.154,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:53,6504N29_Sprocket for Silent Drive Chain,47,0,insufficient_vacuum,0.150,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:53,8681N14_Aluminum Bolt-Together Fitting,0,0,insufficient_vacuum,0.010,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:53,8681N14_Aluminum Bolt-Together Fitting,1,0,no_initial_contact,0.017,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:53,8681N14_Aluminum Bolt-Together Fitting,2,0,insufficient_vacuum,0.011,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:53,8681N14_Aluminum Bolt-Together Fitting,3,0,insufficient_vacuum,0.010,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:53,8681N14_Aluminum Bolt-Together Fitting,4,0,insufficient_vacuum,0.010,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:53,8681N14_Aluminum Bolt-Together Fitting,5,0,insufficient_vacuum,0.009,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:53,8681N14_Aluminum Bolt-Together Fitting,6,0,insufficient_vacuum,0.010,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:53,8681N14_Aluminum Bolt-Together Fitting,7,0,insufficient_vacuum,0.011,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:53,8681N14_Aluminum Bolt-Together Fitting,8,0,insufficient_vacuum,0.010,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:53,8681N14_Aluminum Bolt-Together Fitting,9,0,insufficient_vacuum,0.010,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:53,8681N14_Aluminum Bolt-Together Fitting,10,0,insufficient_vacuum,0.012,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:53,8681N14_Aluminum Bolt-Together Fitting,11,0,insufficient_vacuum,0.010,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:53,8681N14_Aluminum Bolt-Together Fitting,12,0,insufficient_vacuum,0.009,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:53,8681N14_Aluminum Bolt-Together Fitting,13,1,none,0.248,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:53,8681N14_Aluminum Bolt-Together Fitting,14,0,insufficient_vacuum,0.010,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:53,8681N14_Aluminum Bolt-Together Fitting,15,0,insufficient_vacuum,0.010,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:53,8681N14_Aluminum Bolt-Together Fitting,16,0,insufficient_vacuum,0.010,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:53,8681N14_Aluminum Bolt-Together Fitting,17,0,insufficient_vacuum,0.010,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:54,8681N14_Aluminum Bolt-Together Fitting,18,1,none,0.541,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:54,8681N14_Aluminum Bolt-Together Fitting,19,0,insufficient_vacuum,0.010,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:54,8681N14_Aluminum Bolt-Together Fitting,20,1,none,0.315,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:54,8681N14_Aluminum Bolt-Together Fitting,21,0,insufficient_vacuum,0.010,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:54,8681N14_Aluminum Bolt-Together Fitting,22,0,insufficient_vacuum,0.010,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:54,8681N14_Aluminum Bolt-Together Fitting,23,0,insufficient_vacuum,0.009,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:54,8681N14_Aluminum Bolt-Together Fitting,24,0,insufficient_vacuum,0.010,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:54,8681N14_Aluminum Bolt-Together Fitting,25,0,insufficient_vacuum,0.011,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:54,8681N14_Aluminum Bolt-Together Fitting,26,1,none,0.060,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:54,8681N14_Aluminum Bolt-Together Fitting,27,0,insufficient_vacuum,0.011,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:54,8681N14_Aluminum Bolt-Together Fitting,28,0,insufficient_vacuum,0.010,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:54,8681N14_Aluminum Bolt-Together Fitting,29,0,insufficient_vacuum,0.010,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:54,8681N14_Aluminum Bolt-Together Fitting,30,0,insufficient_vacuum,0.010,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:54,8681N14_Aluminum Bolt-Together Fitting,31,0,insufficient_vacuum,0.010,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:55,8681N14_Aluminum Bolt-Together Fitting,32,1,none,0.399,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:55,8681N14_Aluminum Bolt-Together Fitting,33,0,insufficient_vacuum,0.010,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:55,8681N14_Aluminum Bolt-Together Fitting,34,0,insufficient_vacuum,0.009,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:55,8681N14_Aluminum Bolt-Together Fitting,35,1,none,0.228,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:55,8681N14_Aluminum Bolt-Together Fitting,36,0,insufficient_vacuum,0.012,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:55,8681N14_Aluminum Bolt-Together Fitting,37,1,none,0.273,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:55,8681N14_Aluminum Bolt-Together Fitting,38,0,no_initial_contact,0.011,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:55,8681N14_Aluminum Bolt-Together Fitting,39,0,insufficient_vacuum,0.011,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:55,8681N14_Aluminum Bolt-Together Fitting,40,0,insufficient_vacuum,0.011,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:55,8681N14_Aluminum Bolt-Together Fitting,41,0,insufficient_vacuum,0.010,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:55,8681N14_Aluminum Bolt-Together Fitting,42,1,none,0.214,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:55,8681N14_Aluminum Bolt-Together Fitting,43,0,insufficient_vacuum,0.010,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:56,8681N14_Aluminum Bolt-Together Fitting,44,1,none,0.156,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:56,8681N14_Aluminum Bolt-Together Fitting,45,0,insufficient_vacuum,0.009,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:56,8681N14_Aluminum Bolt-Together Fitting,46,0,insufficient_vacuum,0.010,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:56,8681N14_Aluminum Bolt-Together Fitting,47,0,insufficient_vacuum,0.010,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:56,9734K17_Flange-Mounted Linear Bearing Housing,0,0,torque_exceeded_lift,0.280,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:57,9734K17_Flange-Mounted Linear Bearing Housing,1,0,torque_exceeded_lift,0.151,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:57,9734K17_Flange-Mounted Linear Bearing Housing,2,0,torque_exceeded_lift,0.143,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:57,9734K17_Flange-Mounted Linear Bearing Housing,3,0,torque_exceeded_lift,0.145,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:57,9734K17_Flange-Mounted Linear Bearing Housing,4,0,insufficient_vacuum,0.139,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:57,9734K17_Flange-Mounted Linear Bearing Housing,5,0,torque_exceeded_lift,0.144,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:57,9734K17_Flange-Mounted Linear Bearing Housing,6,0,torque_exceeded_lift,0.146,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:57,9734K17_Flange-Mounted Linear Bearing Housing,7,0,insufficient_vacuum,0.149,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:58,9734K17_Flange-Mounted Linear Bearing Housing,8,0,torque_exceeded_lift,0.158,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:58,9734K17_Flange-Mounted Linear Bearing Housing,9,0,insufficient_vacuum,0.147,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:58,9734K17_Flange-Mounted Linear Bearing Housing,10,0,insufficient_vacuum,0.138,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:58,9734K17_Flange-Mounted Linear Bearing Housing,11,0,torque_exceeded_lift,0.165,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:58,9734K17_Flange-Mounted Linear Bearing Housing,12,0,torque_exceeded_lift,0.160,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:59,9734K17_Flange-Mounted Linear Bearing Housing,13,1,none,0.291,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:59,9734K17_Flange-Mounted Linear Bearing Housing,14,1,none,0.693,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:59,9734K17_Flange-Mounted Linear Bearing Housing,15,0,torque_exceeded_lift,0.146,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:00,9734K17_Flange-Mounted Linear Bearing Housing,16,1,none,0.214,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:00,9734K17_Flange-Mounted Linear Bearing Housing,17,1,none,0.213,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:00,9734K17_Flange-Mounted Linear Bearing Housing,18,0,insufficient_vacuum,0.135,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:00,9734K17_Flange-Mounted Linear Bearing Housing,19,0,insufficient_vacuum,0.140,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:00,9734K17_Flange-Mounted Linear Bearing Housing,20,1,none,0.264,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:00,9734K17_Flange-Mounted Linear Bearing Housing,21,0,insufficient_vacuum,0.163,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:01,9734K17_Flange-Mounted Linear Bearing Housing,22,0,insufficient_vacuum,0.137,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:01,9734K17_Flange-Mounted Linear Bearing Housing,23,1,none,0.439,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:02,9734K17_Flange-Mounted Linear Bearing Housing,24,1,none,0.698,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:02,9734K17_Flange-Mounted Linear Bearing Housing,25,1,none,0.713,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:03,9734K17_Flange-Mounted Linear Bearing Housing,26,1,none,0.724,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:04,9734K17_Flange-Mounted Linear Bearing Housing,27,1,none,0.697,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:04,9734K17_Flange-Mounted Linear Bearing Housing,28,1,none,0.271,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:04,9734K17_Flange-Mounted Linear Bearing Housing,29,1,none,0.275,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:05,9734K17_Flange-Mounted Linear Bearing Housing,30,1,none,0.421,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:05,9734K17_Flange-Mounted Linear Bearing Housing,31,0,insufficient_vacuum,0.159,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:05,9734K17_Flange-Mounted Linear Bearing Housing,32,1,none,0.449,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:06,9734K17_Flange-Mounted Linear Bearing Housing,33,1,none,0.372,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:06,9734K17_Flange-Mounted Linear Bearing Housing,34,0,insufficient_vacuum,0.144,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:07,9734K17_Flange-Mounted Linear Bearing Housing,35,1,none,0.718,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:07,9734K17_Flange-Mounted Linear Bearing Housing,36,0,torque_exceeded_lift,0.163,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:07,9734K17_Flange-Mounted Linear Bearing Housing,37,0,torque_exceeded_lift,0.146,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:07,9734K17_Flange-Mounted Linear Bearing Housing,38,1,none,0.355,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:08,9734K17_Flange-Mounted Linear Bearing Housing,39,0,torque_exceeded_lift,0.154,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:08,9734K17_Flange-Mounted Linear Bearing Housing,40,0,torque_exceeded_lift,0.159,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:08,9734K17_Flange-Mounted Linear Bearing Housing,41,0,insufficient_vacuum,0.138,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:08,9734K17_Flange-Mounted Linear Bearing Housing,42,0,insufficient_vacuum,0.147,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:08,9734K17_Flange-Mounted Linear Bearing Housing,43,0,insufficient_vacuum,0.148,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:08,9734K17_Flange-Mounted Linear Bearing Housing,44,0,insufficient_vacuum,0.164,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:08,9734K17_Flange-Mounted Linear Bearing Housing,45,0,insufficient_vacuum,0.144,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:09,9734K17_Flange-Mounted Linear Bearing Housing,46,0,insufficient_vacuum,0.144,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:09,9734K17_Flange-Mounted Linear Bearing Housing,47,0,torque_exceeded_lift,0.176,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:11,9804K64_Linear Bearing Housing,0,0,insufficient_vacuum,0.101,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:11,9804K64_Linear Bearing Housing,1,0,insufficient_vacuum,0.102,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:11,9804K64_Linear Bearing Housing,2,0,insufficient_vacuum,0.099,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:11,9804K64_Linear Bearing Housing,3,0,insufficient_vacuum,0.100,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:11,9804K64_Linear Bearing Housing,4,0,insufficient_vacuum,0.097,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:11,9804K64_Linear Bearing Housing,5,0,insufficient_vacuum,0.097,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:11,9804K64_Linear Bearing Housing,6,0,insufficient_vacuum,0.110,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:12,9804K64_Linear Bearing Housing,7,0,insufficient_vacuum,0.100,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:12,9804K64_Linear Bearing Housing,8,0,insufficient_vacuum,0.099,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:12,9804K64_Linear Bearing Housing,9,0,insufficient_vacuum,0.099,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:12,9804K64_Linear Bearing Housing,10,0,no_initial_contact,0.097,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:12,9804K64_Linear Bearing Housing,11,0,insufficient_vacuum,0.100,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:13,9804K64_Linear Bearing Housing,12,1,none,0.668,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:13,9804K64_Linear Bearing Housing,13,0,no_initial_contact,0.099,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:13,9804K64_Linear Bearing Housing,14,0,no_initial_contact,0.101,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:13,9804K64_Linear Bearing Housing,15,0,torque_exceeded_lift,0.099,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:13,9804K64_Linear Bearing Housing,16,0,insufficient_vacuum,0.102,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:13,9804K64_Linear Bearing Housing,17,0,insufficient_vacuum,0.107,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:13,9804K64_Linear Bearing Housing,18,1,none,0.131,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:13,9804K64_Linear Bearing Housing,19,0,insufficient_vacuum,0.099,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:13,9804K64_Linear Bearing Housing,20,0,insufficient_vacuum,0.100,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:14,9804K64_Linear Bearing Housing,21,0,torque_exceeded_lift,0.101,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:14,9804K64_Linear Bearing Housing,22,1,none,0.160,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:14,9804K64_Linear Bearing Housing,23,0,insufficient_vacuum,0.110,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:14,9804K64_Linear Bearing Housing,24,1,none,0.614,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:15,9804K64_Linear Bearing Housing,25,0,insufficient_vacuum,0.108,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:15,9804K64_Linear Bearing Housing,26,1,none,0.643,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:15,9804K64_Linear Bearing Housing,27,1,none,0.275,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:16,9804K64_Linear Bearing Housing,28,1,none,0.631,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:16,9804K64_Linear Bearing Housing,29,0,insufficient_vacuum,0.106,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:16,9804K64_Linear Bearing Housing,30,1,none,0.289,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:17,9804K64_Linear Bearing Housing,31,1,none,0.298,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:17,9804K64_Linear Bearing Housing,32,0,insufficient_vacuum,0.095,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:17,9804K64_Linear Bearing Housing,33,0,insufficient_vacuum,0.100,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:17,9804K64_Linear Bearing Housing,34,1,none,0.189,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:17,9804K64_Linear Bearing Housing,35,0,insufficient_vacuum,0.103,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:17,9804K64_Linear Bearing Housing,36,0,torque_exceeded_lift,0.098,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:17,9804K64_Linear Bearing Housing,37,0,insufficient_vacuum,0.096,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:18,9804K64_Linear Bearing Housing,38,0,no_initial_contact,0.107,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:18,9804K64_Linear Bearing Housing,39,0,torque_exceeded_lift,0.098,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:18,9804K64_Linear Bearing Housing,40,0,torque_exceeded_lift,0.094,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:18,9804K64_Linear Bearing Housing,41,0,insufficient_vacuum,0.100,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:18,9804K64_Linear Bearing Housing,42,0,torque_exceeded_lift,0.106,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:18,9804K64_Linear Bearing Housing,43,0,torque_exceeded_lift,0.112,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:18,9804K64_Linear Bearing Housing,44,0,insufficient_vacuum,0.111,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:18,9804K64_Linear Bearing Housing,45,0,torque_exceeded_lift,0.097,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:18,9804K64_Linear Bearing Housing,46,0,torque_exceeded_lift,0.100,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:18,9804K64_Linear Bearing Housing,47,0,insufficient_vacuum,0.096,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:23,big_plate,0,0,insufficient_vacuum,0.364,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:24,big_plate,1,1,none,0.458,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:23,big_plate,2,0,insufficient_vacuum,-0.481,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:23,big_plate,3,1,none,0.362,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:24,big_plate,4,0,insufficient_vacuum,0.368,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:24,big_plate,5,1,none,0.662,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:25,big_plate,6,0,insufficient_vacuum,0.328,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:25,big_plate,7,0,insufficient_vacuum,0.335,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:26,big_plate,8,1,none,0.970,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:27,big_plate,9,0,insufficient_vacuum,0.412,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:27,big_plate,10,1,none,0.646,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:27,big_plate,11,0,insufficient_vacuum,0.304,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:28,big_plate,12,0,insufficient_vacuum,0.331,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:29,big_plate,13,1,none,0.834,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:29,big_plate,14,0,insufficient_vacuum,0.317,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:30,big_plate,15,1,none,0.774,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:31,big_plate,16,1,none,0.823,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:31,big_plate,17,0,insufficient_vacuum,0.340,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:31,big_plate,18,0,insufficient_vacuum,0.331,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:32,big_plate,19,1,none,0.716,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:33,big_plate,20,1,none,1.332,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:34,big_plate,21,1,none,0.531,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:34,big_plate,22,1,none,0.664,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:35,big_plate,23,1,none,0.710,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:36,big_plate,24,0,insufficient_vacuum,0.370,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:37,big_plate,25,1,none,0.991,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:37,big_plate,26,0,insufficient_vacuum,0.457,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:38,big_plate,27,1,none,0.800,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:39,big_plate,28,1,none,1.177,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:39,big_plate,29,0,insufficient_vacuum,0.523,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:40,big_plate,30,0,insufficient_vacuum,0.480,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:41,big_plate,31,1,none,0.548,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:41,big_plate,32,0,insufficient_vacuum,0.388,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:42,big_plate,33,1,none,1.081,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:42,big_plate,34,0,insufficient_vacuum,0.387,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:43,big_plate,35,0,insufficient_vacuum,0.382,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:43,big_plate,36,0,no_initial_contact,0.400,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:44,big_plate,37,1,none,0.826,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:44,big_plate,38,0,insufficient_vacuum,0.405,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:45,big_plate,39,1,none,0.424,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:45,big_plate,40,0,insufficient_vacuum,0.347,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:46,big_plate,41,1,none,1.136,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:47,big_plate,42,0,insufficient_vacuum,0.583,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:48,big_plate,43,1,none,0.821,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:48,big_plate,44,0,insufficient_vacuum,0.317,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:48,big_plate,45,0,insufficient_vacuum,0.393,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:49,big_plate,46,0,insufficient_vacuum,0.516,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:50,big_plate,47,1,none,0.676,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:52,black_plate,0,0,insufficient_vacuum,0.026,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:52,black_plate,1,0,insufficient_vacuum,0.026,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:52,black_plate,2,0,insufficient_vacuum,0.027,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:52,black_plate,3,0,insufficient_vacuum,0.029,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:52,black_plate,4,0,insufficient_vacuum,0.027,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:52,black_plate,5,0,insufficient_vacuum,0.029,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:52,black_plate,6,1,none,0.246,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:52,black_plate,7,0,insufficient_vacuum,0.026,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:52,black_plate,8,0,insufficient_vacuum,0.026,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:53,black_plate,9,1,none,0.300,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:53,black_plate,10,0,insufficient_vacuum,0.027,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:53,black_plate,11,0,insufficient_vacuum,0.026,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:53,black_plate,12,0,insufficient_vacuum,0.026,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:53,black_plate,13,0,insufficient_vacuum,0.029,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:53,black_plate,14,0,insufficient_vacuum,0.028,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:53,black_plate,15,0,insufficient_vacuum,0.031,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:53,black_plate,16,0,insufficient_vacuum,0.028,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:53,black_plate,17,0,insufficient_vacuum,0.029,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:53,black_plate,18,1,none,0.420,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:53,black_plate,19,0,insufficient_vacuum,0.028,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:53,black_plate,20,0,insufficient_vacuum,0.027,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:54,black_plate,21,1,none,0.408,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:54,black_plate,22,1,none,0.106,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:54,black_plate,23,0,insufficient_vacuum,0.032,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:54,black_plate,24,0,no_initial_contact,0.094,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:54,black_plate,25,0,insufficient_vacuum,0.050,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:54,black_plate,26,0,insufficient_vacuum,0.030,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:54,black_plate,27,0,insufficient_vacuum,0.030,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:54,black_plate,28,1,none,0.163,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:54,black_plate,29,0,insufficient_vacuum,0.032,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:55,black_plate,30,1,none,0.346,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:55,black_plate,31,0,insufficient_vacuum,0.027,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:55,black_plate,32,0,insufficient_vacuum,0.029,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:55,black_plate,33,1,none,0.551,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:54,black_plate,34,0,insufficient_vacuum,-0.765,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:55,black_plate,35,1,none,0.290,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:55,black_plate,36,0,insufficient_vacuum,0.027,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:55,black_plate,37,0,insufficient_vacuum,0.027,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:55,black_plate,38,0,insufficient_vacuum,0.042,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:55,black_plate,39,0,insufficient_vacuum,0.031,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:55,black_plate,40,1,none,0.248,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:55,black_plate,41,0,insufficient_vacuum,0.027,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:55,black_plate,42,0,insufficient_vacuum,0.026,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:55,black_plate,43,0,insufficient_vacuum,0.026,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:55,black_plate,44,0,insufficient_vacuum,0.026,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:55,black_plate,45,1,none,0.253,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:55,black_plate,46,0,insufficient_vacuum,0.027,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:55,black_plate,47,0,insufficient_vacuum,0.030,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:58,black_plug,0,0,insufficient_vacuum,1.131,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:59,black_plug,1,0,insufficient_vacuum,0.604,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:00,black_plug,2,0,insufficient_vacuum,0.563,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:00,black_plug,3,0,insufficient_vacuum,0.591,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:01,black_plug,4,0,insufficient_vacuum,0.666,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:02,black_plug,5,1,none,0.865,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:02,black_plug,6,0,insufficient_vacuum,0.534,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:03,black_plug,7,0,insufficient_vacuum,0.575,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:04,black_plug,8,1,none,1.011,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:04,black_plug,9,0,insufficient_vacuum,0.491,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:05,black_plug,10,1,none,0.778,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:06,black_plug,11,0,insufficient_vacuum,0.640,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:06,black_plug,12,0,insufficient_vacuum,0.519,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:19:07,black_plug,13,0,insufficient_vacuum,0.454,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:19:07,black_plug,14,0,insufficient_vacuum,0.455,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:19:08,black_plug,15,0,insufficient_vacuum,0.540,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:19:08,black_plug,16,0,insufficient_vacuum,0.495,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:19:09,black_plug,17,1,none,1.128,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:19:10,black_plug,18,0,insufficient_vacuum,0.539,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:19:10,black_plug,19,0,insufficient_vacuum,0.467,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:19:12,black_plug,20,1,none,1.208,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:19:12,black_plug,21,0,insufficient_vacuum,0.632,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:19:13,black_plug,22,0,insufficient_vacuum,0.479,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:19:13,black_plug,23,0,insufficient_vacuum,0.583,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:19:14,black_plug,24,0,insufficient_vacuum,0.564,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:19:14,black_plug,25,0,insufficient_vacuum,0.484,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:19:15,black_plug,26,0,insufficient_vacuum,0.576,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:19:15,black_plug,27,0,insufficient_vacuum,0.490,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:19:16,black_plug,28,0,insufficient_vacuum,0.650,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:19:17,black_plug,29,1,none,1.284,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:19:18,black_plug,30,1,none,1.111,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:19:19,black_plug,31,0,insufficient_vacuum,0.475,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:19:20,black_plug,32,1,none,1.129,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:19:21,black_plug,33,0,insufficient_vacuum,0.568,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:19:22,black_plug,34,1,none,1.175,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:19:22,black_plug,35,0,insufficient_vacuum,0.628,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:19:23,black_plug,36,0,insufficient_vacuum,0.499,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:23,black_plug,37,0,insufficient_vacuum,0.492,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:24,black_plug,38,0,insufficient_vacuum,0.458,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:24,black_plug,39,0,insufficient_vacuum,0.682,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:25,black_plug,40,0,insufficient_vacuum,0.549,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:26,black_plug,41,1,none,1.071,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:27,black_plug,42,1,none,0.469,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:27,black_plug,43,0,insufficient_vacuum,0.617,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:28,black_plug,44,1,none,1.101,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:29,black_plug,45,0,insufficient_vacuum,0.439,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:29,black_plug,46,0,insufficient_vacuum,0.449,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:30,black_plug,47,0,insufficient_vacuum,0.571,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:35,plug_connector,0,0,insufficient_vacuum,1.647,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:36,plug_connector,1,0,insufficient_vacuum,0.978,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:37,plug_connector,2,0,insufficient_vacuum,0.796,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:38,plug_connector,3,0,insufficient_vacuum,0.808,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:39,plug_connector,4,0,insufficient_vacuum,0.933,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:40,plug_connector,5,0,insufficient_vacuum,0.918,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:41,plug_connector,6,0,insufficient_vacuum,0.976,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:41,plug_connector,7,0,insufficient_vacuum,0.805,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:42,plug_connector,8,0,insufficient_vacuum,0.778,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:43,plug_connector,9,0,insufficient_vacuum,0.773,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:44,plug_connector,10,0,insufficient_vacuum,0.775,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:45,plug_connector,11,0,insufficient_vacuum,0.989,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:19:45,plug_connector,12,0,insufficient_vacuum,0.780,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:19:46,plug_connector,13,0,insufficient_vacuum,0.838,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:19:47,plug_connector,14,0,insufficient_vacuum,0.846,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:19:48,plug_connector,15,0,insufficient_vacuum,0.866,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:19:49,plug_connector,16,0,insufficient_vacuum,1.039,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:19:50,plug_connector,17,0,insufficient_vacuum,0.919,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:19:51,plug_connector,18,0,insufficient_vacuum,0.910,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:19:52,plug_connector,19,0,insufficient_vacuum,0.909,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:19:53,plug_connector,20,0,insufficient_vacuum,0.939,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:19:54,plug_connector,21,0,insufficient_vacuum,0.918,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:19:55,plug_connector,22,0,insufficient_vacuum,0.840,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:19:55,plug_connector,23,0,insufficient_vacuum,0.953,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:19:56,plug_connector,24,0,insufficient_vacuum,1.023,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:19:58,plug_connector,25,0,insufficient_vacuum,1.427,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:19:58,plug_connector,26,0,insufficient_vacuum,0.062,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:19:59,plug_connector,27,0,insufficient_vacuum,0.751,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:20:00,plug_connector,28,1,none,1.061,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:20:01,plug_connector,29,0,insufficient_vacuum,0.835,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:20:02,plug_connector,30,0,insufficient_vacuum,1.055,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:20:03,plug_connector,31,0,insufficient_vacuum,1.096,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:20:04,plug_connector,32,0,insufficient_vacuum,0.944,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:20:05,plug_connector,33,0,insufficient_vacuum,0.834,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:20:05,plug_connector,34,0,insufficient_vacuum,0.924,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:20:06,plug_connector,35,0,insufficient_vacuum,0.801,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:20:07,plug_connector,36,0,insufficient_vacuum,0.792,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:20:08,plug_connector,37,0,insufficient_vacuum,0.875,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:20:09,plug_connector,38,0,insufficient_vacuum,0.967,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:20:10,plug_connector,39,0,insufficient_vacuum,0.975,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:20:11,plug_connector,40,0,insufficient_vacuum,1.117,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:20:12,plug_connector,41,0,insufficient_vacuum,0.973,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:20:13,plug_connector,42,0,insufficient_vacuum,1.242,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:20:14,plug_connector,43,0,insufficient_vacuum,0.895,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:20:15,plug_connector,44,0,insufficient_vacuum,0.943,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:20:16,plug_connector,45,0,insufficient_vacuum,0.789,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:20:17,plug_connector,46,0,insufficient_vacuum,0.829,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:20:18,plug_connector,47,0,insufficient_vacuum,0.945,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:20:28,plug_sensor,0,0,insufficient_vacuum,2.754,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:20:29,plug_sensor,1,0,insufficient_vacuum,1.391,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:20:30,plug_sensor,2,0,insufficient_vacuum,0.173,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:20:31,plug_sensor,3,0,insufficient_vacuum,1.035,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:20:32,plug_sensor,4,1,none,1.257,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:20:33,plug_sensor,5,0,insufficient_vacuum,1.197,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:20:35,plug_sensor,6,1,none,1.604,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:20:36,plug_sensor,7,1,none,1.532,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:20:37,plug_sensor,8,0,insufficient_vacuum,1.007,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:20:38,plug_sensor,9,0,insufficient_vacuum,1.094,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:20:39,plug_sensor,10,0,insufficient_vacuum,1.188,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:20:41,plug_sensor,11,0,insufficient_vacuum,1.124,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:20:42,plug_sensor,12,0,insufficient_vacuum,1.249,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:20:43,plug_sensor,13,0,insufficient_vacuum,0.990,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:20:44,plug_sensor,14,0,insufficient_vacuum,1.229,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:20:45,plug_sensor,15,0,insufficient_vacuum,1.109,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:20:47,plug_sensor,16,1,none,1.817,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:20:48,plug_sensor,17,0,insufficient_vacuum,1.006,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:20:50,plug_sensor,18,1,none,1.739,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:20:52,plug_sensor,19,1,none,1.808,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:20:53,plug_sensor,20,0,insufficient_vacuum,1.145,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:20:54,plug_sensor,21,0,insufficient_vacuum,1.027,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:20:55,plug_sensor,22,0,insufficient_vacuum,1.008,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:20:56,plug_sensor,23,0,insufficient_vacuum,0.957,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:20:57,plug_sensor,24,0,insufficient_vacuum,1.008,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:20:58,plug_sensor,25,0,insufficient_vacuum,1.097,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:20:59,plug_sensor,26,0,insufficient_vacuum,1.023,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:21:00,plug_sensor,27,0,insufficient_vacuum,0.996,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:21:00,plug_sensor,28,1,none,0.515,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:21:02,plug_sensor,29,1,none,1.333,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:21:03,plug_sensor,30,1,none,1.645,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:21:05,plug_sensor,31,1,none,1.601,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:21:06,plug_sensor,32,0,insufficient_vacuum,1.075,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:21:07,plug_sensor,33,0,insufficient_vacuum,0.935,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:21:08,plug_sensor,34,0,insufficient_vacuum,1.153,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:21:09,plug_sensor,35,0,insufficient_vacuum,1.171,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:21:11,plug_sensor,36,1,none,1.507,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:12,plug_sensor,37,0,insufficient_vacuum,0.946,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:13,plug_sensor,38,0,insufficient_vacuum,0.912,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:14,plug_sensor,39,0,insufficient_vacuum,1.046,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:15,plug_sensor,40,1,none,1.269,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:16,plug_sensor,41,0,insufficient_vacuum,1.086,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:18,plug_sensor,42,1,none,1.548,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:19,plug_sensor,43,1,none,1.795,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:20,plug_sensor,44,0,insufficient_vacuum,1.071,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:22,plug_sensor,45,0,insufficient_vacuum,1.068,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:23,plug_sensor,46,0,insufficient_vacuum,1.053,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:24,plug_sensor,47,0,insufficient_vacuum,0.992,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:30,silver_gun,0,1,none,1.592,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:31,silver_gun,1,1,none,0.910,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:32,silver_gun,2,0,insufficient_vacuum,0.519,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:32,silver_gun,3,0,insufficient_vacuum,0.567,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:32,silver_gun,4,0,insufficient_vacuum,-0.212,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:32,silver_gun,5,0,insufficient_vacuum,0.566,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:33,silver_gun,6,0,insufficient_vacuum,0.562,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:34,silver_gun,7,0,insufficient_vacuum,0.573,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:34,silver_gun,8,0,insufficient_vacuum,0.544,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:35,silver_gun,9,0,insufficient_vacuum,0.559,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:36,silver_gun,10,1,none,0.834,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:36,silver_gun,11,0,insufficient_vacuum,0.667,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:37,silver_gun,12,1,none,1.092,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:21:38,silver_gun,13,1,none,1.097,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:21:39,silver_gun,14,1,none,0.845,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:21:40,silver_gun,15,0,insufficient_vacuum,0.576,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:21:40,silver_gun,16,0,insufficient_vacuum,0.622,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:21:41,silver_gun,17,0,insufficient_vacuum,0.552,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:21:42,silver_gun,18,0,insufficient_vacuum,0.563,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:21:42,silver_gun,19,0,insufficient_vacuum,0.516,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:21:43,silver_gun,20,1,none,0.903,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:21:43,silver_gun,21,0,insufficient_vacuum,0.496,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:21:44,silver_gun,22,1,none,0.967,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:21:45,silver_gun,23,0,insufficient_vacuum,0.562,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:21:46,silver_gun,24,1,none,0.817,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:21:47,silver_gun,25,1,none,0.874,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:21:48,silver_gun,26,1,none,0.807,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:21:48,silver_gun,27,0,insufficient_vacuum,0.543,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:21:49,silver_gun,28,0,insufficient_vacuum,0.544,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:21:49,silver_gun,29,0,insufficient_vacuum,0.519,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:21:50,silver_gun,30,0,insufficient_vacuum,0.512,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:21:50,silver_gun,31,1,none,0.864,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:21:51,silver_gun,32,0,insufficient_vacuum,0.553,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:21:52,silver_gun,33,0,insufficient_vacuum,0.510,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:21:52,silver_gun,34,0,insufficient_vacuum,0.526,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:21:53,silver_gun,35,0,insufficient_vacuum,0.604,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:21:53,silver_gun,36,0,insufficient_vacuum,0.521,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:54,silver_gun,37,0,insufficient_vacuum,0.528,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:54,silver_gun,38,0,insufficient_vacuum,0.510,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:55,silver_gun,39,0,insufficient_vacuum,0.510,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:55,silver_gun,40,0,insufficient_vacuum,0.500,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:56,silver_gun,41,0,insufficient_vacuum,0.515,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:56,silver_gun,42,0,insufficient_vacuum,0.535,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:57,silver_gun,43,0,insufficient_vacuum,0.524,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:57,silver_gun,44,0,insufficient_vacuum,0.526,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:58,silver_gun,45,1,none,0.822,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:59,silver_gun,46,0,insufficient_vacuum,0.496,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:21:59,silver_gun,47,0,insufficient_vacuum,0.568,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:00,silver_plate,0,1,none,0.350,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:00,silver_plate,1,0,insufficient_vacuum,0.009,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:00,silver_plate,2,0,insufficient_vacuum,0.009,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:00,silver_plate,3,0,insufficient_vacuum,0.010,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:00,silver_plate,4,1,none,0.266,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:01,silver_plate,5,1,none,0.518,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:01,silver_plate,6,0,insufficient_vacuum,0.009,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:01,silver_plate,7,0,insufficient_vacuum,0.008,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:01,silver_plate,8,1,none,0.600,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:01,silver_plate,9,0,insufficient_vacuum,0.009,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:01,silver_plate,10,0,insufficient_vacuum,0.008,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:01,silver_plate,11,0,insufficient_vacuum,0.008,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:01,silver_plate,12,1,none,0.272,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:22:01,silver_plate,13,0,insufficient_vacuum,0.009,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:22:01,silver_plate,14,0,insufficient_vacuum,0.009,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:22:01,silver_plate,15,0,insufficient_vacuum,0.008,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:22:02,silver_plate,16,1,none,0.261,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:22:02,silver_plate,17,1,none,0.419,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:22:02,silver_plate,18,0,insufficient_vacuum,0.008,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:22:02,silver_plate,19,0,insufficient_vacuum,0.008,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:22:03,silver_plate,20,1,none,0.559,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:22:03,silver_plate,21,0,insufficient_vacuum,0.008,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:22:03,silver_plate,22,0,insufficient_vacuum,0.011,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:22:03,silver_plate,23,1,none,0.517,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:22:03,silver_plate,24,1,none,-0.234,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:22:03,silver_plate,25,0,insufficient_vacuum,0.008,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:22:03,silver_plate,26,0,insufficient_vacuum,0.008,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:22:03,silver_plate,27,0,insufficient_vacuum,0.009,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:22:04,silver_plate,28,1,none,0.548,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:22:04,silver_plate,29,1,none,0.372,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:22:04,silver_plate,30,0,insufficient_vacuum,0.009,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:22:04,silver_plate,31,0,insufficient_vacuum,0.009,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:22:05,silver_plate,32,1,none,0.533,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:22:05,silver_plate,33,0,insufficient_vacuum,0.009,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:22:05,silver_plate,34,0,insufficient_vacuum,0.009,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:22:05,silver_plate,35,1,none,0.630,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:22:05,silver_plate,36,1,none,0.238,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:05,silver_plate,37,0,insufficient_vacuum,0.009,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:05,silver_plate,38,0,insufficient_vacuum,0.009,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:05,silver_plate,39,0,insufficient_vacuum,0.009,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:06,silver_plate,40,1,none,0.621,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:06,silver_plate,41,1,none,0.343,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:06,silver_plate,42,0,insufficient_vacuum,0.009,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:06,silver_plate,43,0,insufficient_vacuum,0.010,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:06,silver_plate,44,0,insufficient_vacuum,0.009,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:06,silver_plate,45,0,insufficient_vacuum,0.011,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:06,silver_plate,46,0,no_initial_contact,0.015,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:06,silver_plate,47,0,insufficient_vacuum,0.010,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:13,warped_pipe,0,0,insufficient_vacuum,2.230,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:14,warped_pipe,1,0,insufficient_vacuum,1.868,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:16,warped_pipe,2,0,insufficient_vacuum,1.404,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:17,warped_pipe,3,0,insufficient_vacuum,1.230,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:18,warped_pipe,4,0,insufficient_vacuum,1.158,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:19,warped_pipe,5,0,insufficient_vacuum,1.146,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:20,warped_pipe,6,0,insufficient_vacuum,1.044,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:22,warped_pipe,7,0,insufficient_vacuum,1.187,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:23,warped_pipe,8,0,insufficient_vacuum,1.103,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:24,warped_pipe,9,0,insufficient_vacuum,1.133,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:25,warped_pipe,10,0,insufficient_vacuum,1.082,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:26,warped_pipe,11,0,insufficient_vacuum,1.114,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:27,warped_pipe,12,0,insufficient_vacuum,1.110,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:22:28,warped_pipe,13,0,insufficient_vacuum,1.117,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:22:29,warped_pipe,14,0,insufficient_vacuum,1.119,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:22:30,warped_pipe,15,0,insufficient_vacuum,1.089,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:22:32,warped_pipe,16,0,insufficient_vacuum,1.101,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:22:33,warped_pipe,17,0,insufficient_vacuum,1.196,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:22:34,warped_pipe,18,0,insufficient_vacuum,1.150,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:22:35,warped_pipe,19,0,insufficient_vacuum,1.152,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:22:35,warped_pipe,20,0,insufficient_vacuum,0.288,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:22:36,warped_pipe,21,0,insufficient_vacuum,1.131,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:22:38,warped_pipe,22,0,insufficient_vacuum,1.147,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:22:39,warped_pipe,23,0,insufficient_vacuum,1.101,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:22:40,warped_pipe,24,0,insufficient_vacuum,1.030,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:22:41,warped_pipe,25,0,insufficient_vacuum,1.091,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:22:42,warped_pipe,26,1,none,1.540,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:22:44,warped_pipe,27,1,none,1.545,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:22:45,warped_pipe,28,0,insufficient_vacuum,1.163,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:22:46,warped_pipe,29,0,insufficient_vacuum,1.141,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:22:47,warped_pipe,30,0,insufficient_vacuum,1.141,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:22:49,warped_pipe,31,0,insufficient_vacuum,1.182,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:22:50,warped_pipe,32,1,none,1.500,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:22:51,warped_pipe,33,0,insufficient_vacuum,1.164,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:22:52,warped_pipe,34,0,insufficient_vacuum,1.020,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:22:53,warped_pipe,35,0,no_initial_contact,1.053,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:22:54,warped_pipe,36,0,insufficient_vacuum,1.167,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:55,warped_pipe,37,0,insufficient_vacuum,1.031,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:57,warped_pipe,38,0,insufficient_vacuum,1.185,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:58,warped_pipe,39,0,insufficient_vacuum,1.074,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:22:59,warped_pipe,40,0,insufficient_vacuum,1.079,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:23:00,warped_pipe,41,0,insufficient_vacuum,1.109,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:23:01,warped_pipe,42,1,none,1.458,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:23:03,warped_pipe,43,0,insufficient_vacuum,1.311,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:23:04,warped_pipe,44,0,insufficient_vacuum,1.301,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:23:05,warped_pipe,45,0,insufficient_vacuum,1.069,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:23:06,warped_pipe,46,0,insufficient_vacuum,1.070,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:23:06,warped_pipe,47,0,insufficient_vacuum,0.315,101325.0,0.6,0.05,0.025,0.002,0

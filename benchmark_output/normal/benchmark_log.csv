@@ -1,0 +1,154 @@
+timestamp,object,grasp_idx,success,failure_code,trial_time_s,vacuum_pa,mu,lift_threshold,diameter,penetration,force
+2025-05-09 11:15:58,2245A101_Granite Flat-Surface Plate,0,0,insufficient_vacuum,0.033,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:58,2245A101_Granite Flat-Surface Plate,1,0,insufficient_vacuum,0.020,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,2,0,insufficient_vacuum,0.021,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,3,0,insufficient_vacuum,0.021,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,4,0,insufficient_vacuum,0.023,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,5,0,insufficient_vacuum,0.021,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,6,0,insufficient_vacuum,0.021,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,7,0,insufficient_vacuum,0.020,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,8,0,insufficient_vacuum,0.022,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,9,0,insufficient_vacuum,0.021,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,10,0,insufficient_vacuum,0.020,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,11,0,insufficient_vacuum,0.020,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,12,0,insufficient_vacuum,0.019,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,13,0,insufficient_vacuum,0.019,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,14,0,insufficient_vacuum,0.020,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,15,0,insufficient_vacuum,0.019,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,16,0,insufficient_vacuum,0.020,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,17,0,insufficient_vacuum,0.021,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,18,0,insufficient_vacuum,0.021,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:15:59,2245A101_Granite Flat-Surface Plate,19,0,insufficient_vacuum,0.021,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:16,2361A62_V-Block,0,0,insufficient_vacuum,1.496,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:17,2361A62_V-Block,1,0,no_initial_contact,0.942,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:17,2361A62_V-Block,2,0,insufficient_vacuum,0.183,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:18,2361A62_V-Block,3,0,insufficient_vacuum,0.769,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:19,2361A62_V-Block,4,0,no_initial_contact,0.610,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:19,2361A62_V-Block,5,0,insufficient_vacuum,0.593,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:20,2361A62_V-Block,6,0,insufficient_vacuum,0.594,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:20,2361A62_V-Block,7,0,insufficient_vacuum,0.622,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:21,2361A62_V-Block,8,0,insufficient_vacuum,0.621,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:22,2361A62_V-Block,9,0,insufficient_vacuum,0.603,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:22,2361A62_V-Block,10,0,insufficient_vacuum,0.674,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:23,2361A62_V-Block,11,0,insufficient_vacuum,0.576,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:16:24,2361A62_V-Block,12,0,insufficient_vacuum,0.629,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:16:24,2361A62_V-Block,13,0,no_initial_contact,0.563,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:16:25,2361A62_V-Block,14,0,no_initial_contact,0.545,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:16:25,2361A62_V-Block,15,0,insufficient_vacuum,0.550,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:16:26,2361A62_V-Block,16,0,insufficient_vacuum,0.548,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:16:26,2361A62_V-Block,17,0,insufficient_vacuum,0.577,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:27,2361A62_V-Block,18,0,no_initial_contact,0.555,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:27,2361A62_V-Block,19,0,insufficient_vacuum,0.549,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:28,2361A62_V-Block,20,0,insufficient_vacuum,0.530,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:29,2361A62_V-Block,21,0,no_initial_contact,0.609,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:29,2361A62_V-Block,22,0,insufficient_vacuum,0.559,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:30,2361A62_V-Block,23,0,insufficient_vacuum,0.549,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:30,2361A62_V-Block,24,0,insufficient_vacuum,0.601,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:31,2361A62_V-Block,25,0,insufficient_vacuum,0.553,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:31,2361A62_V-Block,26,0,insufficient_vacuum,0.570,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:16:32,2361A62_V-Block,27,0,insufficient_vacuum,0.571,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:00,4063N13_Base-Mounted Dual Shaft Support,0,1,none,0.040,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:00,4063N13_Base-Mounted Dual Shaft Support,1,1,none,0.027,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:00,4063N13_Base-Mounted Dual Shaft Support,2,1,none,0.035,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:00,4063N13_Base-Mounted Dual Shaft Support,3,1,none,0.054,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:00,4063N13_Base-Mounted Dual Shaft Support,4,1,none,0.041,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:00,4063N13_Base-Mounted Dual Shaft Support,5,1,none,0.027,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:13,6109K207_Extra-Wide Sleeve Bearing Carriage,0,1,none,0.487,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:14,6109K207_Extra-Wide Sleeve Bearing Carriage,1,0,insufficient_vacuum,0.150,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:14,6109K207_Extra-Wide Sleeve Bearing Carriage,2,1,none,0.343,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:14,6109K207_Extra-Wide Sleeve Bearing Carriage,3,1,none,0.348,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:14,6109K207_Extra-Wide Sleeve Bearing Carriage,4,1,none,0.239,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:15,6109K207_Extra-Wide Sleeve Bearing Carriage,5,1,none,0.344,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:15,6109K207_Extra-Wide Sleeve Bearing Carriage,6,1,none,0.463,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:16,6109K207_Extra-Wide Sleeve Bearing Carriage,7,1,none,0.463,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:16,6109K207_Extra-Wide Sleeve Bearing Carriage,8,1,none,0.362,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:16,6109K207_Extra-Wide Sleeve Bearing Carriage,9,1,none,0.374,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:17,6109K207_Extra-Wide Sleeve Bearing Carriage,10,0,insufficient_vacuum,0.145,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:17,6109K207_Extra-Wide Sleeve Bearing Carriage,11,1,none,0.357,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,0,0,insufficient_vacuum,0.008,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,1,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,2,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,3,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,4,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,5,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,6,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,7,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,8,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,9,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,10,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,11,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,12,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,13,0,insufficient_vacuum,0.005,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,14,0,no_initial_contact,0.005,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,15,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,16,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,17,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,18,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,19,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,20,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,21,0,no_initial_contact,0.005,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,22,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,23,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,24,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,25,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,26,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,27,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,28,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:39,6177N11_Calibration Square,29,0,insufficient_vacuum,0.004,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:41,6504N29_Sprocket for Silent Drive Chain,0,0,no_initial_contact,0.293,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:41,6504N29_Sprocket for Silent Drive Chain,1,0,no_initial_contact,0.143,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:41,6504N29_Sprocket for Silent Drive Chain,2,0,no_initial_contact,0.175,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:41,6504N29_Sprocket for Silent Drive Chain,3,0,no_initial_contact,0.156,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:41,6504N29_Sprocket for Silent Drive Chain,4,0,no_initial_contact,0.143,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:41,6504N29_Sprocket for Silent Drive Chain,5,0,no_initial_contact,0.142,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:42,6504N29_Sprocket for Silent Drive Chain,6,0,no_initial_contact,0.146,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:42,6504N29_Sprocket for Silent Drive Chain,7,0,no_initial_contact,0.146,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:42,6504N29_Sprocket for Silent Drive Chain,8,0,no_initial_contact,0.162,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:42,6504N29_Sprocket for Silent Drive Chain,9,0,no_initial_contact,0.148,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:42,6504N29_Sprocket for Silent Drive Chain,10,0,no_initial_contact,0.143,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:42,6504N29_Sprocket for Silent Drive Chain,11,0,no_initial_contact,0.145,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:42,6504N29_Sprocket for Silent Drive Chain,12,0,no_initial_contact,0.154,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:43,6504N29_Sprocket for Silent Drive Chain,13,0,no_initial_contact,0.150,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:43,6504N29_Sprocket for Silent Drive Chain,14,0,no_initial_contact,0.202,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:43,6504N29_Sprocket for Silent Drive Chain,15,0,no_initial_contact,0.145,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:43,6504N29_Sprocket for Silent Drive Chain,16,0,no_initial_contact,0.145,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:43,6504N29_Sprocket for Silent Drive Chain,17,0,no_initial_contact,0.165,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:53,8681N14_Aluminum Bolt-Together Fitting,0,1,none,0.033,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:53,8681N14_Aluminum Bolt-Together Fitting,1,0,insufficient_vacuum,0.011,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:53,8681N14_Aluminum Bolt-Together Fitting,2,1,none,0.026,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:17:53,8681N14_Aluminum Bolt-Together Fitting,3,0,insufficient_vacuum,0.011,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:09,9804K64_Linear Bearing Housing,0,0,insufficient_vacuum,0.196,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:09,9804K64_Linear Bearing Housing,1,0,insufficient_vacuum,0.102,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:09,9804K64_Linear Bearing Housing,2,1,none,0.120,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:10,9804K64_Linear Bearing Housing,3,0,insufficient_vacuum,0.096,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:10,9804K64_Linear Bearing Housing,4,0,insufficient_vacuum,0.097,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:10,9804K64_Linear Bearing Housing,5,0,insufficient_vacuum,0.098,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:10,9804K64_Linear Bearing Housing,6,0,insufficient_vacuum,0.104,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:10,9804K64_Linear Bearing Housing,7,0,insufficient_vacuum,0.105,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:10,9804K64_Linear Bearing Housing,8,0,insufficient_vacuum,0.097,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:10,9804K64_Linear Bearing Housing,9,0,insufficient_vacuum,0.093,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:10,9804K64_Linear Bearing Housing,10,0,insufficient_vacuum,0.097,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:10,9804K64_Linear Bearing Housing,11,1,none,0.121,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:10,9804K64_Linear Bearing Housing,12,0,insufficient_vacuum,0.098,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:11,9804K64_Linear Bearing Housing,13,0,insufficient_vacuum,0.093,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:11,9804K64_Linear Bearing Housing,14,0,insufficient_vacuum,0.096,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:20,big_plate,0,1,none,0.693,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:20,big_plate,1,0,insufficient_vacuum,0.318,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:21,big_plate,2,1,none,0.391,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:21,big_plate,3,1,none,0.350,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:21,big_plate,4,1,none,0.407,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:22,big_plate,5,1,none,0.404,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:22,big_plate,6,1,none,0.356,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:22,big_plate,7,0,insufficient_vacuum,0.368,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:50,black_plate,0,1,none,0.078,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:50,black_plate,1,1,none,0.258,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:50,black_plate,2,0,insufficient_vacuum,0.027,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:50,black_plate,3,0,insufficient_vacuum,0.027,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:50,black_plate,4,1,none,0.239,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:51,black_plate,5,1,none,0.338,101325.0,0.6,0.05,0.035,0.002,0
+2025-05-09 11:18:51,black_plate,6,1,none,0.246,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:51,black_plate,7,1,none,0.297,101325.0,0.6,0.05,0.05,0.002,0
+2025-05-09 11:18:51,black_plate,8,1,none,0.057,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:52,black_plate,9,1,none,0.296,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:52,black_plate,10,0,insufficient_vacuum,0.038,101325.0,0.6,0.05,0.025,0.002,0
+2025-05-09 11:18:52,black_plate,11,0,insufficient_vacuum,0.026,101325.0,0.6,0.05,0.025,0.002,0
