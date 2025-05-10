@@ -12,7 +12,7 @@
         "max_load": {
             "max_payload": 7.32,
             "max_force": 71.8,
-            "max_torque": false
+            "max_torque": 1.7950
         },
         "max_distances": {
             "min_reach": 0,
