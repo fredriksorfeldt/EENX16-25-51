@@ -327,13 +327,10 @@ class GripperTool(Tools):
 
         if isinstance(face_points, Dict):
             for face, points in face_points.items():
-
-                if not points:
-                    continue
             
-                surface = BRepAdaptor_Surface(face)
-                if surface.GetType == GeomAbs_Plane:
-                    points = filter_distance_from_outer_wire(points, face, self.min_depth, self.max_depth)
+                # surface = BRepAdaptor_Surface(face)
+                # if surface.GetType == GeomAbs_Plane:
+                points = filter_distance_from_outer_wire(points, face, self.min_depth, self.max_depth)
 
                 point_pairs = filter_point_pairs(points, shape.shape, pi/32, self.min_width, self.max_width)
 
