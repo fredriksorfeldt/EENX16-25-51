@@ -45,7 +45,25 @@ class ZMap:
         return self.data[mask_flat]
     
     def extract_rectangle_patches(self, width: float, height: float):
-        ##### THIS DID NOT WORK #####
+        if width > self.size:
+            raise ValueError("Tool width out of bounds")
+        if height > self.size:
+            raise ValueError("Tool height out of bounds")
+
+        min_side = min(width, height)
+        step_size = self.size // self.sampling_rate
+        min_px_side = min_side // step_size
+
+        start = int((self.sampling_rate - min_px_side) // 2)
+        end = self.sampling_rate - start
+
+        mask0 = np.zeros((self.sampling_rate, self.sampling_rate), dtype=bool)
+        mask90 = np.zeros((self.sampling_rate, self.sampling_rate), dtype=bool)
+
+        mask0[start:end, :] = 1
+        mask90[:, start:end] = 1
+
+        return [self.data[mask0.flat], self.data[mask90.flat]], [0, 90]
     
     def is_flat(self, penetration_threshold: float, patch: NDArray[np.float64]) -> np.bool_:
         return np.all(np.abs(patch) < penetration_threshold)
