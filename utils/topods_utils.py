@@ -216,22 +216,21 @@ def filter_point_pairs(points: PointSet, shape: TopoDS_Shape, max_angle: float, 
     point_pairs = []
     for point in points:
 
-        backs = ray_intersect(point, shape, False)
-        if not backs:
+        back = ray_intersect(point, shape, False)
+        if not back:
             continue
 
-        for back in backs:
-            if pi - gp_Dir(*point.normal).Angle(gp_Dir(*back.normal)) > max_angle:
-                continue
+        if pi - gp_Dir(*point.normal).Angle(gp_Dir(*back.normal)) > max_angle:
+            continue
 
-            if not (min_dist <= gp_Pnt(*point.position).Distance(gp_Pnt(*back.position)) <= max_dist):
-                continue
+        if not (min_dist <= gp_Pnt(*point.position).Distance(gp_Pnt(*back.position)) <= max_dist):
+            continue
 
-            point_pairs.append((point, back))
+        point_pairs.append((point, back))
     return point_pairs
 
 
-def ray_intersect(point: PointSample, shape: TopoDS_Shape, up:bool=True) -> List[PointSample]:
+def ray_intersect(point: PointSample, shape: TopoDS_Shape, up:bool=True) -> Optional[PointSample]:
 
     if not up:
         normal = gp_Dir(*point.normal).Reversed()
@@ -242,13 +241,11 @@ def ray_intersect(point: PointSample, shape: TopoDS_Shape, up:bool=True) -> List
 
     intersector.Perform(line, 1e-6, 1e6)
 
-    backs = []
     if intersector.IsDone() and intersector.NbPnt() > 0:
-        for i in range(1, intersector.NbPnt() + 1, 2):
-            normal = uv_normal(intersector.Face(i), intersector.UParameter(i), intersector.VParameter(i))
-            backs.append(PointSample(np.array(intersector.Pnt(1).Coord()), np.array(normal)))
+        normal = uv_normal(intersector.Face(1), intersector.UParameter(1), intersector.VParameter(1))
+        return PointSample(np.array(intersector.Pnt(1).Coord()), np.array(normal))
+    return None
 
-    return backs
 
 def filter_closest_orthogonal(point_pairs: List[Tuple[PointSample, PointSample]], shape: TopoDS_Shape) -> List[Tuple[PointSample, float]]:
 
