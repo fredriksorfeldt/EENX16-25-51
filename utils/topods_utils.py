@@ -355,7 +355,7 @@ def filter_gripper_occlution(bredth: float, depth: float, points: List[Tuple[Poi
 
     return valid_points
 
-def filter_clustered_points(points: List[PointSample], shape: TopoDS_Shape, key: Callable[[PointSample], Any], angle_tol=0.0872664626, dist_tol:float=20):
+def filter_clustered_points(points: List[PointSample], shape: TopoDS_Shape, key: Callable[[PointSample], Any], angle_tol=0.0872664626, min_dist:float=10):
 
     points.sort(key=key)
     point_face: Dict[PointSample, TopoDS_Face] = {}
@@ -375,7 +375,7 @@ def filter_clustered_points(points: List[PointSample], shape: TopoDS_Shape, key:
             if p1 == p2:
                 continue
 
-            if gp_Dir(*p1.normal).Angle(gp_Dir(*p2.normal)) <= angle_tol and gp_Pnt(*p1.position).Distance(gp_Pnt(*p2.position)) <= dist_tol:
+            if point_face.get(p1).IsEqual(point_face.get(p2)) and gp_Pnt(*p1.position).Distance(gp_Pnt(*p2.position)) <= min_dist:
                 flag = True
                 break
 
